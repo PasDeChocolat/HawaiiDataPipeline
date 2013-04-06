@@ -57,7 +57,13 @@ module HDPipeline
     
     def response_for url
       name = cache_name_for url
-      read_fragment(name) || write_fragment(name, response_for!(url))
+      response = read_fragment(name)
+      return response if response
+
+      response = response_for! url
+      return nil if response[:code] != "200"
+      
+      write_fragment(name, response[:body])
     end
     
     def read_fragment name
@@ -193,10 +199,9 @@ module HDPipeline
         url = "https://#{API_URL}/browse/embed?limitTo=datasets&page=#{page}"
         puts "url is: #{url}"
         response = response_for url
-        break if response[:code] != "200"
+        break if response.nil?
         
-        body = response[:body]
-        new_links = body.scan(/href="(?:http:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
+        new_links = response.scan(/href="(?:http:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
         break if new_links.empty?
         
         links.merge Set.new(new_links)
