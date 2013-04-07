@@ -44,34 +44,61 @@ span {
 <script src="js/list.min.js"></script>
 <script src="js/underscore-min.js"></script>
 <script>
-  var keys;
+  var dataset_location = 'data/birth.json';
+  var keys;  // Store all the keys in this dataset.
+
+  // When page is fully loaded ("ready"), run this:
   $(document).ready(function(){
-    $.getJSON('data/birth.json', function(data){
+    
+    // Run this after fetching the dataset.
+    $.getJSON(dataset_location, function(data){
+
+      // Get a reference to the list that we'll add items to:
       var list = $('.list');
+
+      // Find all the keys of the first element in the dataset.
+      // We're assuming here that all the elements have the same keys.
+      // If they don't we'd have to change this to cope.
       keys = _.keys(data[0]);
+
+      // Iterate through each item in the dataset:
       _.each(data, function(item, item_index){
+
+        // Create a new list item for each item in the dataset:
         var list_item = '<li>';
+
+        // Add a span element for each key-value pair in the item:
         _.each(keys, function(key, key_index){
           list_item += '<span class="'+key+'">'+item[key]+'</span>';
         });
+
+        // Close the list item:
         list_item += '</li>';
+
+        // Add the list item to the end of the list:
         list.append($(list_item));
       })
 
+      // Pass the names of dataset keys for which we are able to filter
+      // the list using the input text box:
       var options = {
         valueNames: keys
       };
+
+      // This is where List.js does its *black magic*:
       var featureList = new List('example-list', options);
 
+      // Add attribute to the sort button, to tell List.js that you'd like
+      // the list sorted by a particular key.  In this case, the "year":
       $('.sort.btn').attr('data-sort', keys[0]);
-      $('input.search').attr('placeholder', 'Search ' + keys[0] + 's');
+      $('.sort.btn').text('Sort by '+keys[0]);
     });
   })
 </script>
 </head>
 <body>
   <div id='example-list'>
-    <input class="search" />
+    <input class="search" placeholder="Search features" />
     <span class="sort btn">Sort</span>
     <ul class="list"></ul>
   </div>
