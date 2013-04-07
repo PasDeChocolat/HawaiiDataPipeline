@@ -3,6 +3,45 @@ This is the Hawaii Data Pipeline tool.  It's the fastest way to get all the Hawa
 Read the first of two or three tutorials here:
 http://pasdechocolat.com/2013/04/06/introducing-the-hawaii-data-pipeline/
 
+````ruby
+$ (clone this repo)
+$ cd (this repo)
+$ cp config/config.template.yml config/config.yml
+$ (edit config/config.yml to include your Socrata API App Token)
+$ irb -r './client.rb'
+> client = HDPipeline::Client.new 
+> client.list_datasets
+> data = client.data_for "padw-q7ep"
+> data[0]
+````
+
+Enjoy!
+
+# HONOLULU DATASETS
+
+````ruby
+client.set_dataset_type :city
+client.list_datasets
+ => ...
+0) Name: /Finance/City-FY14-Proposed  ID: rh9s-z3mn
+1) Name: /Transportation/Bike-Rack-Locations-By-Area  ID: ab7c-s2jr
+2) Name: /dataset/2012-Dec-Top-Ten-Sites  ID: 7kck-y29a
+3) Name: /dataset/Automated-external-defibrillator-Locations  ID: 2swm-eusf
+4) Name: /dataset/City-spending  ID: std8-yakc
+5) Name: /dataset/Crime-Incidents  ID: a96q-gyhq
+6) Name: /dataset/Data-Catalog  ID: a3ah-kpkr
+7) Name: /dataset/HART-Proposed-Budget-2012  ID: ifzd-2k3p
+8) Name: /dataset/Honolulu-311-Reports  ID: fdx8-nih6
+9) Name: /dataset/Neighborhood-Boards  ID: 3dxw-z8rr
+10) Name: /dataset/Neighborhood-Boards-Election-2011  ID: w4ir-s4fd
+11) Name: /dataset/Public-Art  ID: yef5-h88r
+12) Name: /dataset/Sister-Cities  ID: pvti-pwka
+13) Name: /dataset/Templates  ID: t6ff-mewd
+14) Name: /dataset/Traffic-Camera-Locations  ID: dcdf-43kn
+15) Name: /dataset/Traffic-Incidents  ID: ix32-iw26
+ => nil
+````
+
 # STATE OF HAWAII DATASETS
 
 ````ruby
@@ -382,27 +421,15 @@ Search complete, found 369 datasets.
  => nil
 ````
 
-# HONOLULU DATASETS
 
-````ruby
-client.set_dataset_type :city
-client.list_datasets
- => ...
-0) Name: /Finance/City-FY14-Proposed  ID: rh9s-z3mn
-1) Name: /Transportation/Bike-Rack-Locations-By-Area  ID: ab7c-s2jr
-2) Name: /dataset/2012-Dec-Top-Ten-Sites  ID: 7kck-y29a
-3) Name: /dataset/Automated-external-defibrillator-Locations  ID: 2swm-eusf
-4) Name: /dataset/City-spending  ID: std8-yakc
-5) Name: /dataset/Crime-Incidents  ID: a96q-gyhq
-6) Name: /dataset/Data-Catalog  ID: a3ah-kpkr
-7) Name: /dataset/HART-Proposed-Budget-2012  ID: ifzd-2k3p
-8) Name: /dataset/Honolulu-311-Reports  ID: fdx8-nih6
-9) Name: /dataset/Neighborhood-Boards  ID: 3dxw-z8rr
-10) Name: /dataset/Neighborhood-Boards-Election-2011  ID: w4ir-s4fd
-11) Name: /dataset/Public-Art  ID: yef5-h88r
-12) Name: /dataset/Sister-Cities  ID: pvti-pwka
-13) Name: /dataset/Templates  ID: t6ff-mewd
-14) Name: /dataset/Traffic-Camera-Locations  ID: dcdf-43kn
-15) Name: /dataset/Traffic-Incidents  ID: ix32-iw26
- => nil
-````
+# LICENSE
+
+I'm using the [MIT License](http://opensource.org/licenses/MIT "MIT License text") for now, let me know if you have other preferences.  Or, send a pull request.
+
+Copyright (c) 2013 Pas de Chocolat, LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
