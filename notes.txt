@@ -24,10 +24,10 @@ $ irb -r './client.rb'
 
 
 
-$stdout = File.new( '/tmp/output', 'w' )
+$stdout = File.new( './tmp/output.txt', 'w' )
 To restore:
 $stdout = STDOUT
-
+$stdout.flush
 
 # dataset listing
 > c.list_datasets
