@@ -6,7 +6,8 @@ require 'set'
 require 'yaml'
 
 module HDPipeline
-  API_URL = "data.hawaii.gov"
+  STATE_API_URL = "data.hawaii.gov"
+  CITY_API_URL  = "data.honolulu.gov"
   CLIENT_ENV = "development"
   APP_ROOT = File.expand_path(File.dirname(__FILE__))
   WEEK_IN_MINUTES = 60 * 24 * 7
@@ -15,7 +16,8 @@ module HDPipeline
   CONFIG_ROOT = APP_ROOT + "/config"
   
   class Client
-
+    attr_reader :config
+    
     class << self
       def slurp_config
         raw_config = File.read "#{CONFIG_ROOT}/config.yml"
@@ -26,10 +28,19 @@ module HDPipeline
     def initialize(opts={})
       @user_config = self.class.slurp_config || {}
       @config = {}
+      @config[:gov] = opts[:gov] || :state
       @config[:app_token] = opts[:app_token]
       @config[:app_token] ||= @user_config[:socrata] ? @user_config[:socrata][:app_token] : nil
       @config[:app_token] ||= "K6rLY8NBK0Hgm8QQybFmwIUQw"
       FileUtils.mkdir_p CACHE_ROOT
+    end
+
+    def set_dataset_type city_or_state
+      @config[:gov] = city_or_state
+    end
+
+    def dataset_type
+      @config[:gov]
     end
 
     def response_for! url
@@ -112,7 +123,7 @@ module HDPipeline
 
     def clear_cache!
       dataset_size = @dataset_links ? @dataset_links.size : 0
-      @dataset_links = nil
+      @dataset_links = {}
       puts "Cache of #{dataset_size} dataset name#{dataset_size == 1 ? '' : 's'} cleared."
     end
 
@@ -158,6 +169,10 @@ module HDPipeline
       nil
     end
 
+    def api_url
+      @config[:gov] == :state ? STATE_API_URL : CITY_API_URL
+    end
+    
     # Paging supported, see docs here:
     # http://dev.socrata.com/docs/queries
     #
@@ -172,7 +187,7 @@ module HDPipeline
       all_data = opts[:keep_in_mem] ? [] : nil
       
       while true do
-        d = get_json "http://#{API_URL}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
+        d = get_json "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
         all_data += d if opts[:keep_in_mem]
         break if d.size < 1000
         offset += 1
@@ -190,13 +205,13 @@ module HDPipeline
 
 
     def datasets
-      return @dataset_links unless @dataset_links.nil?
+      return @dataset_links[dataset_type] unless @dataset_links.nil? || @dataset_links[dataset_type].nil?
       
       links = Set.new
-      page = 0
+      page = 1
       while true do
         puts "Looking for datasets on page #: #{page}"
-        url = "https://#{API_URL}/browse/embed?limitTo=datasets&page=#{page}"
+        url = "https://#{api_url}/browse/embed?limitTo=datasets&page=#{page}"
         puts "url is: #{url}"
         response = response_for url
         break if response.nil?
@@ -209,7 +224,7 @@ module HDPipeline
         page += 1
       end
       puts "Search complete, found #{links.size} datasets."
-      @dataset_links = links
+      (@dataset_links || {})[dataset_type] = links
     end
 
     def list_datasets
