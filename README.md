@@ -17,7 +17,7 @@ $ irb -r './client.rb'
 
 Enjoy!
 
-# HONOLULU DATASETS
+# CITY OF HONOLULU DATASETS
 
 ````ruby
 client.set_dataset_type :city
