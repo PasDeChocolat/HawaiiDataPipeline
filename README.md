@@ -15,6 +15,15 @@ $ irb -r './client.rb'
 > data[0]
 ````
 
+There's also an alternate way to grab datasets by their index (in the list):
+
+````ruby
+> c.list_item_at 214
+ => {:name=>"/Health/Birth-Rate-State-Of-Hawaii-1900-2011", :id=>"padw-q7ep", :index=>214}
+> data = client.data_at 214
+ => [{"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"},...
+````
+
 Enjoy!
 
 # CITY OF HONOLULU DATASETS
