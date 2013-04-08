@@ -5,6 +5,10 @@ require 'json'
 require 'set'
 require 'yaml'
 
+# require local libraries (from ./lib)
+$:.unshift File.dirname(__FILE__)+"/lib"
+require 'pipeline_dataset'
+
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
   CITY_API_URL  = "data.honolulu.gov"
@@ -16,6 +20,7 @@ module HDPipeline
   CONFIG_ROOT = APP_ROOT + "/config"
   
   class Client
+    include PipelineDataset
     attr_reader :config
     
     class << self
@@ -122,51 +127,9 @@ module HDPipeline
     end
 
     def clear_cache!
-      dataset_size = @dataset_links ? @dataset_links.size : 0
-      @dataset_links = {}
-      puts "Cache of #{dataset_size} dataset name#{dataset_size == 1 ? '' : 's'} cleared."
-    end
-
-    # client.views                 # returns all views, all columns
-    # client.views(limit: 2)       # limits returned dataset to 2
-    # client.views(cols: [:name])  # returns only the "name" kv pair, for all views
-    # client.views(limit: 3, cols: [:id, :name])  # returns the "id" and "name" kv pairs, 
-                                                  #   limiting to three views
-    def views(opts={})
-      limit = opts[:limit]
-      cols = opts[:cols] || []
-
-      url = "http://#{API_URL}/api/views"
-      url += "?limit=#{limit}" if limit
-      all_views = get_json url
-      
-      return all_views if cols.empty?
-
-      column_names = cols.map{ |c| c.to_s }
-      all_views.map do |v| 
-        v.reject! { |k, v| !column_names.include?(k) }
-      end
-      return all_views
-    end
-
-    # Sorted by a key
-    def views_sorted_by sort_thing
-      views.sort_by{ |v| v[sort_thing.to_s] }
-    end
-
-    # All keys in a view
-    def view_keys
-      sample = views(limit: 1)
-      return nil if sample.empty?
-      sample.first.keys.map { |k| k.to_sym }
-    end
-
-    # List of all dataset view names
-    def list_views
-      views_sorted_by('name').each do |n|
-        puts "#{n['name']}"
-      end
-      nil
+      dataset_size = @dataset_catalog ? @dataset_catalog.size : 0
+      @dataset_catalog = {}
+      puts "Cache of #{dataset_size} catalog#{dataset_size == 1 ? '' : 's'} cleared."
     end
 
     def api_url
@@ -203,9 +166,24 @@ module HDPipeline
       data_for id, opts
     end
 
+    def data_at index, opts={}
+      id = PipelineDataset.resource_id_at datasets, index
+      data_for id, opts
+    end
 
+    def run_data_at index, opts={}
+      id = PipelineDataset.resource_id_at datasets, index
+      run_data_for id, opts
+    end
+
+    def list_item_at index
+      d = PipelineDataset.catalog_item_at datasets, index
+      puts "No dataset for that index." if d.nil?
+      d
+    end
+    
     def datasets
-      return @dataset_links[dataset_type] unless @dataset_links.nil? || @dataset_links[dataset_type].nil?
+      return @dataset_catalog[dataset_type] unless @dataset_catalog.nil? || @dataset_catalog[dataset_type].nil?
       
       links = Set.new
       page = 1
@@ -218,24 +196,23 @@ module HDPipeline
         
         new_links = response.scan(/href="(?:http:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
         break if new_links.empty?
-        
-        links.merge Set.new(new_links)
+
+        hashes = new_links.map { |link| { name: link[0], id: link[1] } }
+        links.merge Set.new(hashes)
         puts "... #{links.size} unique datasets found... (still searching)"
         page += 1
       end
       puts "Search complete, found #{links.size} datasets."
-      (@dataset_links || {})[dataset_type] = links
+      @dataset_catalog ||= {}
+      @dataset_catalog[dataset_type] = PipelineDataset.sort_catalog( links )
     end
 
     def list_datasets
-      sorted_datasets.each_with_index do |d, idx|
-        puts "#{idx}) Name: #{d.first}  ID: #{d[1]}"
+      datasets.each do |d|
+        puts "#{d[:index]}) Name: #{d[:name]}  ID: #{d[:id]}"
       end
       nil
     end
 
-    def sorted_datasets
-      datasets.to_a.sort_by { |ds| ds.first }
-    end
   end
 end
