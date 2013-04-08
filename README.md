@@ -13,6 +13,7 @@ $ irb -r './client.rb'
 > client.list_datasets
 > data = client.data_for "padw-q7ep"
 > data[0]
+ => {"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"}
 ````
 
 There's also an alternate way to grab datasets by their index (in the list):
