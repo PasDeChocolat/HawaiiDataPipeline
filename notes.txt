@@ -1,42 +1,30 @@
 # Name of this thing?
 Hawaii Data Pipeline
 
-RVM
-Create Gemfile 
-  http://ruby.about.com/od/bundler/ss/Getting-Started-With-Bundler.htm
-Bundler
-
-
-# Install Instructions
-Ruby Virtual Box - Virtual Box, Vagrant, Rails Dev Box
-Several install methods: http://www.ruby-lang.org/en/downloads/
-Ruby on Windows: http://rubyinstaller.org
-On Mac, it has it already in /usr/bin/ruby... but, suggest Homebrew
-method (brew install ruby)
-What's the best way to install ruby?
-
-
-
-
+# Create the client
 $ irb -r './client.rb'
 > c = HGovData::Client.new  # if you have set up your config/config.yml file
 > c = HGovData::Client.new(app_token: "YOUR_CLIENT_TOKEN")
 
+# drop output to file
+> $stdout = File.new( './tmp/output.txt', 'w' )
+1.9.3-p362 :036 > c.list_datasets
+1.9.3-p362 :039 > $stdout.flush
 
-
-$stdout = File.new( './tmp/output.txt', 'w' )
-To restore:
+# To restore:
 $stdout = STDOUT
-$stdout.flush
 
 # dataset listing
 > c.list_datasets
-
 
 # let's look at the death and birth rates in Hawaii
 > d_birth = c.data_for "padw-q7ep"
 > d_death = c.data_for "xa5e-sayp"
 
+
+# change dataset target
+> c.set_dataset_type :state
+> c.set_dataset_type :city
 
 
 $ mkdir -p public/list/data
