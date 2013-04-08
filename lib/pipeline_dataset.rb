@@ -16,6 +16,16 @@ module PipelineDataset
       r = catalog_item_at catalog, index
       r && r[:id]
     end
+
+    def print_catalog_item item
+      puts "#{item[:index]}) Name: #{item[:name]}  ID: #{item[:id]}"
+    end
+
+    def format_catalog_item_hash name, id, index=nil
+      h = { name: name, id: id }
+      h[:index] = index unless index.nil?
+      h
+    end
     
   end
 end

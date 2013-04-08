@@ -197,7 +197,9 @@ module HDPipeline
         new_links = response.scan(/href="(?:http:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
         break if new_links.empty?
 
-        hashes = new_links.map { |link| { name: link[0], id: link[1] } }
+        hashes = new_links.map do |link|
+          PipelineDataset.format_catalog_item_hash( link[0], link[1] )
+        end
         links.merge Set.new(hashes)
         puts "... #{links.size} unique datasets found... (still searching)"
         page += 1
@@ -209,7 +211,7 @@ module HDPipeline
 
     def list_datasets
       datasets.each do |d|
-        puts "#{d[:index]}) Name: #{d[:name]}  ID: #{d[:id]}"
+        PipelineDataset.print_catalog_item d
       end
       nil
     end
