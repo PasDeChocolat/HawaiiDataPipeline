@@ -9,9 +9,16 @@ $ cd (this repo)
 $ cp config/config.template.yml config/config.yml
 $ (edit config/config.yml to include your Socrata API App Token)
 $ irb -r './client.rb'
+
 > client = HDPipeline::Client.new 
+ => #<HDPipeline::Client:0x007f8c82198b90 @user_config={:socrata=>{:app_token=>"xxxxx"}}, @config={:gov=>:state, :app_token=>"xxxxx"}>
+
 > client.list_datasets
+ ... (bit huge list) ...
+
 > data = client.data_for "padw-q7ep"
+ => ... (big dataset as array of hashes) ...
+
 > data[0]
  => {"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"}
 ````
@@ -19,8 +26,12 @@ $ irb -r './client.rb'
 There's also an alternate way to grab datasets by their index (in the list):
 
 ````ruby
-> c.list_item_at 214
+> client.list_item_at 214
  => {:name=>"/Health/Birth-Rate-State-Of-Hawaii-1900-2011", :id=>"padw-q7ep", :index=>214}
+
+> client.list_item_at(214)[:name]
+ => "/Health/Birth-Rate-State-Of-Hawaii-1900-2011"
+
 > data = client.data_at 214
  => [{"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"},...
 ````
