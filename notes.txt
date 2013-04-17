@@ -1,6 +1,14 @@
 # Name of this thing?
 Hawaii Data Pipeline
 
+TODO:
+* add Joe's Farmer's Market (Fusion Tables) example
+* build a cache for geocode lookup
+* put this cache online (so everyone doesn't get throttled on large
+dataset lookups)
+
+
+
 # Create the client
 $ irb -r './client.rb'
 > c = HGovData::Client.new  # if you have set up your config/config.yml file
