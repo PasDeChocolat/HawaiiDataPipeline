@@ -189,12 +189,12 @@ module HDPipeline
       page = 1
       while true do
         puts "Looking for datasets on page #: #{page}"
-        url = "https://#{api_url}/browse/embed?limitTo=datasets&page=#{page}"
+        url = "https://#{api_url}/browse/embed?limitTo=datasets&q=&view_type=table&page=#{page}"
         puts "url is: #{url}"
         response = response_for url
         break if response.nil?
         
-        new_links = response.scan(/href="(?:http:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
+        new_links = response.scan(/href="(?:http[s]?:\/\/.*?)?(\/[^\/]*?\/[^\/]*?)\/(.{4,4}-.{4,4})"/)
         break if new_links.empty?
 
         hashes = new_links.map do |link|
