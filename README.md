@@ -530,8 +530,17 @@ Search complete, found 381 datasets.
 
 # LICENSE
 
-I'm using the [Eclipse Public License](http://opensource.org/licenses/EPL-1.0 "Eclipse Public License") for now. This is the same license used by Clojure. Please let me know if you have other preferences.  Or, send a pull request.
+I'm using the [WTFPL](http://www.wtfpl.net "WTF Public License") for now. 
 
-See LICENSE.txt for license text (or the link above).
+Copyright © 2013 Pas de Chocolat, LLC.
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the COPYING file for more details.
+
+This program is free software. It comes without any warranty, to
+* the extent permitted by applicable law. You can redistribute it
+* and/or modify it under the terms of the Do What The Fuck You Want
+* To Public License, Version 2, as published by Sam Hocevar. See
+* http://www.wtfpl.net/ for more details.
 
 Copyright (c) 2013 Pas de Chocolat, LLC
