@@ -8,8 +8,12 @@ module PipelineDataset
       sorted.each_with_index.map { |x,i| x[:index] = i; x }
     end
 
-    def catalog_item_at catalog, index
-      catalog.select { |d| d[:index] == index }.first
+    def catalog_item_at catalog, index_or_id
+      if index_or_id.is_a? Integer
+        catalog.select { |d| d[:index] == index_or_id }.first
+      elsif index_or_id.is_a? String
+        catalog.select { |d| d[:id] == index_or_id }.first
+      end
     end
 
     def resource_id_at catalog, index

@@ -168,10 +168,17 @@ module HDPipeline
       run_data_for id, opts
     end
 
-    def list_item_at index
-      d = PipelineDataset.catalog_item_at datasets, index
-      puts "No dataset for that index." if d.nil?
+    def list_item_at index_or_id
+      d = PipelineDataset.catalog_item_at datasets, index_or_id
+      puts "No dataset for that index or ID." if d.nil?
       d
+    end
+    alias_method :list_item_for, :list_item_at
+
+    def describe index_or_id
+      item = list_item_at index_or_id
+      pp item
+      nil
     end
     
     def datasets
@@ -181,7 +188,7 @@ module HDPipeline
         # If state, use shiney, new catalog of datasets
         d = data_for STATE_CATALOG_ID, soda_query: "&$where=type='datasets'"
         items = d.map do |item|
-          PipelineDataset.format_catalog_item_hash( item["id"], item["name"]["description"], metadata: item )
+          PipelineDataset.format_catalog_item_hash( item["name"]["description"], item["id"], metadata: item )
         end
       else
         # Use old page-scraping technique for other catalogs:
