@@ -1,7 +1,17 @@
 This is the Hawaii Data Pipeline tool.  It's the fastest way to get all the Hawaii Open Data into Ruby (or JSON).
 
 Read the first of two or three tutorials here:
-http://pasdechocolat.com/2013/04/06/introducing-the-hawaii-data-pipeline/
+### [Introducing the Hawaii Data Pipeline](http://pasdechocolat.com/2013/04/06/introducing-the-hawaii-data-pipeline/)
+An introduction to this tool, and how to get started.
+
+### [The Pipeline Works or Honolulu Too](http://pasdechocolat.com/2013/04/07/pipeline-for-honolulu-too/)
+The tool also works for City of Honolulu data too, find out how to switch datasets.
+
+### [Using D3.js in Hawaii](http://pasdechocolat.com/2013/04/08/using-d3-in-hawaii/)
+D3 is a great tool for making data visualizations.  This tutorial teaches you how to mix D3 with Hawaii Open Data.
+
+### [Mapping Hawaii](http://pasdechocolat.com/2013/05/03/mapping-hawaii/)
+Find out how to create your own custom SVG maps of Hawaii.  You'll start with open source shapefiles and travel through TopoJSON, finally ending up with D3 plots of your points of interest.
 
 ## Requirements
 
