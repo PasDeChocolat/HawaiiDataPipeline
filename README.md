@@ -50,12 +50,19 @@ There's also an alternate way to grab datasets by their index (in the list):
 The State of Hawaii provides a lot of metadata for each catalog item. You can use the tool to explore this metadata.
 
 ````ruby
-# Get a catalog item:
+# Get a catalog item by index:
 > i = client.catalog_at 0
 
-# It behaves like a Ruby Hash:
+# Or, get a catalog item by ID:
+> i = client.catalog_at "wzeq-n5pg"
+
+# It behaves like a Ruby Hash.
 > i.keys
  => [:name, :id, :metadata, :index]
+
+# Note, I've stuffed all the data from the API into the ":metadata" hash.
+# All features of this class are basically convenience methods for 
+# parsing this metadata hash.
 
 # But, it also has method access to top-level keys:
 > i.name
