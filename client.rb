@@ -8,6 +8,7 @@ require 'yaml'
 # require local libraries (from ./lib)
 $:.unshift File.dirname(__FILE__)+"/lib"
 require 'pipeline_dataset'
+require 'catalog_item'
 
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
@@ -179,6 +180,11 @@ module HDPipeline
       item = list_item_at index_or_id
       pp item
       nil
+    end
+
+    def catalog_at index_or_id
+      item = list_item_at index_or_id
+      CatalogItem.new item
     end
     
     def datasets
