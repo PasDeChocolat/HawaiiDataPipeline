@@ -11,7 +11,9 @@ require 'pipeline_dataset'
 
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
+  STATE_CATALOG_ID = "8igt-zydr"
   CITY_API_URL  = "data.honolulu.gov"
+
   CLIENT_ENV = "development"
   APP_ROOT = File.expand_path(File.dirname(__FILE__))
   WEEK_IN_MINUTES = 60 * 24 * 7
@@ -112,8 +114,12 @@ module HDPipeline
       puts "Cache of #{dataset_size} catalog#{dataset_size == 1 ? '' : 's'} cleared."
     end
 
+    def is_state_data?
+      @config[:gov] == :state
+    end
+
     def api_url
-      @config[:gov] == :state ? STATE_API_URL : CITY_API_URL
+      is_state_data? ? STATE_API_URL : CITY_API_URL
     end
     
     # Paging supported, see docs here:
@@ -124,14 +130,19 @@ module HDPipeline
     def data_for id, opts={}
       opts = {
         offset: 0,
-        keep_in_mem: true
+        keep_in_mem: true,
+        from_cache: true,
+        soda_query: nil
       }.merge(opts)
       offset   = opts[:offset]
       all_data = opts[:keep_in_mem] ? [] : nil
       
       while true do
         url = "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
-        d = JSON.parse(response_for(url))
+        url += opts[:soda_query] if !opts[:soda_query].to_s.empty?
+        puts "url is: #{url}"
+        r = opts[:from_cache] ? response_for(url) : response_for!(url)
+        d = JSON.parse(r)
         all_data += d if opts[:keep_in_mem]
         break if d.size < 1000
         offset += 1
@@ -165,8 +176,24 @@ module HDPipeline
     
     def datasets
       return @dataset_catalog[dataset_type] unless @dataset_catalog.nil? || @dataset_catalog[dataset_type].nil?
-      
-      puts "Generating dataset catalog..."
+
+      if is_state_data?
+        # If state, use shiney, new catalog of datasets
+        d = data_for STATE_CATALOG_ID, soda_query: "&$where=type='datasets'"
+        items = d.map do |item|
+          PipelineDataset.format_catalog_item_hash( item["id"], item["name"]["description"], metadata: item )
+        end
+      else
+        # Use old page-scraping technique for other catalogs:
+        items = scraped_datasets
+      end
+
+      @dataset_catalog ||= {}
+      @dataset_catalog[dataset_type] = PipelineDataset.sort_catalog( items )
+    end
+
+    def scraped_datasets
+      puts "Generating scaped dataset catalog..."
       links = Set.new
       page = 1
       while true do
@@ -187,8 +214,7 @@ module HDPipeline
         page += 1
       end
       puts "Dataset catalog generation complete, found #{links.size} datasets."
-      @dataset_catalog ||= {}
-      @dataset_catalog[dataset_type] = PipelineDataset.sort_catalog( links )
+      PipelineDataset.sort_catalog( links )
     end
 
     def list_datasets

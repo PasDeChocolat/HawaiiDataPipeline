@@ -22,9 +22,12 @@ module PipelineDataset
     end
 
     # Defines the structure of the catalog items.
-    def format_catalog_item_hash name, id, index=nil
+    def format_catalog_item_hash name, id, opts={}
+      opts = {
+        metadata: nil
+      }.merge(opts)
       h = { name: name, id: id }
-      h[:index] = index unless index.nil?
+      h[:metadata] = opts[:metadata] unless opts[:metadata].nil?
       h
     end
     
