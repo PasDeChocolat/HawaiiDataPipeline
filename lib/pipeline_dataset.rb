@@ -21,6 +21,7 @@ module PipelineDataset
       puts "#{item[:index]}) Name: #{item[:name]}  ID: #{item[:id]}"
     end
 
+    # Defines the structure of the catalog items.
     def format_catalog_item_hash name, id, index=nil
       h = { name: name, id: id }
       h[:index] = index unless index.nil?
