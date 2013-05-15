@@ -130,7 +130,6 @@ module HDPipeline
       all_data = opts[:keep_in_mem] ? [] : nil
       
       while true do
-        # d = get_json "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
         url = "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
         d = JSON.parse(response_for(url))
         all_data += d if opts[:keep_in_mem]
