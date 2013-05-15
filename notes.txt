@@ -6,6 +6,10 @@ TODO:
 * build a cache for geocode lookup
 * put this cache online (so everyone doesn't get throttled on large
 dataset lookups)
+* use catalog of datasets instead of page-scraping to list datasets:
+https://data.hawaii.gov/dataset/Data-hawaii-gov-catalog-of-datasets/8igt-zydr
+* add metadata from catalog of datasets
+* allow search/filtering via catalog metadata
 
 
 
