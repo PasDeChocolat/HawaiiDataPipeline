@@ -3,6 +3,13 @@ This is the Hawaii Data Pipeline tool.  It's the fastest way to get all the Hawa
 Read the first of two or three tutorials here:
 http://pasdechocolat.com/2013/04/06/introducing-the-hawaii-data-pipeline/
 
+## Requirements
+
+* Ruby version >= 1.9
+* A sense of humor.
+
+## Getting Started
+
 ````ruby
 $ (clone this repo)
 $ cd (this repo)
@@ -23,6 +30,8 @@ $ irb -r './client.rb'
  => {"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"}
 ````
 
+## Datasets by Index
+
 There's also an alternate way to grab datasets by their index (in the list):
 
 ````ruby
@@ -34,6 +43,63 @@ There's also an alternate way to grab datasets by their index (in the list):
 
 > data = client.data_at 214
  => [{"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"},...
+````
+
+## Catalog Exploration
+
+The State of Hawaii provides a lot of metadata for each catalog item. You can use the tool to explore this metadata.
+
+````ruby
+# Get a catalog item:
+> i = client.catalog_at 0
+
+# It behaves like a Ruby Hash:
+> i.keys
+ => [:name, :id, :metadata, :index]
+
+# But, it also has method access to top-level keys:
+> i.name
+ => "1. USA.gov Short Links"
+
+> i.id
+ => "wzeq-n5pg"
+
+# You can call normal Ruby Hash methods on the catalog item,
+# including methods that take blocks.
+# The trailing "nil" just suppresses echoing of output.
+> i.each {|key, value| puts "#{key} is #{value}" };nil
+name is 1. USA.gov Short Links
+id is wzeq-n5pg
+metadata is {"system_id"=>"wzeq-n5pg"...
+index is 0
+ => nil
+
+# Get at the metadata:
+> i.metadata
+ => {"system_id"=>"wzeq-n5pg"
+
+# Find all the columns in this dataset:
+> i.columns
+ => [{"id"=>2802619,...}]
+
+# List columns by name:
+> i.column_names => ["short_url", "user_agent", "country_code", "known_user", "global_bitly_hash", "user_bitly_hash", "user_login", "short_url_cname", "referring_url", "long_url", "timestamp", "geo_region", "location", "city", "timezone", "hash_timestamp", "language"]
+
+# List columns by field (display) names:
+> i.column_field_names
+ => ["Short URL", "User Agent", "Country Code", "Known User", "Global Bitly Hash", "User Bitly Hash", "User Login", "Short URL CNAME", "Referring URL", "Long URL", "Timestamp", "Geo Region", "Location", "City", "Timezone", "Hash Timestamp", "Language"]
+
+# Look up metadata on column by name:
+> i.column "short_url"
+ => [{"id"=>2802619, "name"=>"Short URL", "dataTypeName"=>"url", "fieldName"=>"short_url", "position"=>2, "renderTypeName"=>"url", "tableColumnId"=>1502687, "width"=>208, "format"=>{}, "subColumnTypes"=>["url", "description"]}]
+
+# Look up metadata on column by field (display) name:
+> i.column "Short URL"
+ => [{"id"=>2802619, "name"=>"Short URL"...}]
+
+# Look up metadata on column by ID:
+> i.column 2802619
+ => [{"id"=>2802619, "name"=>"Short URL"...}]
 ````
 
 Enjoy!

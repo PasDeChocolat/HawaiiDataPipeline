@@ -10,6 +10,30 @@ class CatalogItem
     nil;
   end
 
+  def columns
+    metadata["properties"]
+  end
+
+  def column name_or_id
+    if name_or_id.is_a? String
+      cols = columns.select { |p| p["fieldName"] == name_or_id || p["name"] == name_or_id }
+    elsif name_or_id.is_a? Integer
+      cols = columns.select { |p| p["id"] == name_or_id }
+    end
+
+    return nil if cols && cols.empty?
+    cols
+  end
+
+  def column_names
+    columns.map { |p| p["fieldName"] }
+  end
+
+  def column_field_names
+    columns.map { |p| p["name"] }
+  end
+
+
   # Meta-programming ahead.  Enjoy!  Or, shut eyes firmly... your choice.
   #
   # This allows you to do things like this:
