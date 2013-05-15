@@ -128,7 +128,7 @@ module HDPipeline
     #
     # keep_in_mem if you'd like to return all the data as an array.
     # This means it will be kept in memory, so it can be returned.
-    def data_for id, opts={}
+    def data_for index_or_id, opts={}
       opts = {
         offset: 0,
         keep_in_mem: true,
@@ -138,6 +138,9 @@ module HDPipeline
       offset   = opts[:offset]
       all_data = opts[:keep_in_mem] ? [] : nil
       
+      id = index_or_id
+      id = PipelineDataset.resource_id_at datasets, index_or_id if index_or_id.is_a? Integer
+
       while true do
         url = "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
         url += opts[:soda_query] if !opts[:soda_query].to_s.empty?
@@ -151,23 +154,19 @@ module HDPipeline
 
       all_data
     end
+    alias_method :data_at, :data_for
 
     # Retrieve all the data from an API end-point, but just throw it
     # into cache files.  It is not accumulated in memory.
-    def run_data_for id, opts={}
+    def run_data_for index_or_id, opts={}
       opts.merge!({ keep_in_mem: false }) # override!
+
+      id = index_or_id
+      id = PipelineDataset.resource_id_at datasets, index_or_id if index_or_id.is_a? Integer
+
       data_for id, opts
     end
-
-    def data_at index, opts={}
-      id = PipelineDataset.resource_id_at datasets, index
-      data_for id, opts
-    end
-
-    def run_data_at index, opts={}
-      id = PipelineDataset.resource_id_at datasets, index
-      run_data_for id, opts
-    end
+    alias_method :run_data_at, :run_data_for
 
     def list_item_at index_or_id
       d = PipelineDataset.catalog_item_at datasets, index_or_id
