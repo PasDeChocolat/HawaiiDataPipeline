@@ -37,6 +37,7 @@ module HDPipeline
       @config[:app_token] = opts[:app_token]
       @config[:app_token] ||= @user_config[:socrata] ? @user_config[:socrata][:app_token] : nil
       @config[:app_token] ||= "K6rLY8NBK0Hgm8QQybFmwIUQw"
+      puts "API requests will use app_token: #{@config[:app_token]}"
       FileUtils.mkdir_p CACHE_ROOT
     end
 
@@ -59,7 +60,6 @@ module HDPipeline
       end
 
       request = Net::HTTP::Get.new(uri.request_uri)
-      puts "using app_token: #{@config[:app_token]}"
       request.add_field("X-App-Token", @config[:app_token])
       response = http.request request
       { body: response.body,
@@ -105,26 +105,6 @@ module HDPipeline
       puts "Fragment written for '#{name}'"
       buf
     end
-    
-    # assumes json, http (not https)
-    def get! url
-      response = response_for! url
-      # Check our response code
-      if response && response[:code] != "200"
-        raise "Error querying \"#{url.to_s}\": #{response[:body]}"
-      else
-        return response[:body]
-      end
-    end
-
-    def get url
-      name = cache_name_for url
-      read_fragment(name) || write_fragment(name, get!(url))
-    end
-
-    def get_json url
-      return JSON.parse(get(url))
-    end
 
     def clear_cache!
       dataset_size = @dataset_catalog ? @dataset_catalog.size : 0
@@ -150,7 +130,9 @@ module HDPipeline
       all_data = opts[:keep_in_mem] ? [] : nil
       
       while true do
-        d = get_json "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
+        # d = get_json "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
+        url = "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
+        d = JSON.parse(response_for(url))
         all_data += d if opts[:keep_in_mem]
         break if d.size < 1000
         offset += 1
@@ -185,6 +167,7 @@ module HDPipeline
     def datasets
       return @dataset_catalog[dataset_type] unless @dataset_catalog.nil? || @dataset_catalog[dataset_type].nil?
       
+      puts "Generating dataset catalog..."
       links = Set.new
       page = 1
       while true do
@@ -204,7 +187,7 @@ module HDPipeline
         puts "... #{links.size} unique datasets found... (still searching)"
         page += 1
       end
-      puts "Search complete, found #{links.size} datasets."
+      puts "Dataset catalog generation complete, found #{links.size} datasets."
       @dataset_catalog ||= {}
       @dataset_catalog[dataset_type] = PipelineDataset.sort_catalog( links )
     end
@@ -218,3 +201,5 @@ module HDPipeline
 
   end
 end
+
+HDP=HDPipeline # Create module alias
