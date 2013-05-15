@@ -1,0 +1,2724 @@
+[ {
+  "station_name" : "Four Seasons Resort Hualalai",
+  "charging_levels" : "2",
+  "zip_code" : "96740",
+  "restrictions" : "Free charging until 3/31/2013.  Priority is for Registered Guests, but restaurant guests are welcome to charge at no cost.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Chargers are located in the Golf Crescent self-park lot, but EV drivers must Valetto utilize Charger",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free Self-Park and Valet during the day,  Registered Guests have a $20/night parking fee.",
+  "ports" : "2",
+  "parking_lot" : "Four Seasons Resort Hualalai",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.99167523068476",
+    "latitude" : "19.827445243219415",
+    "human_address" : "{\"address\":\"72-100 Kaupulehu Dr.\",\"city\":\"Kailua-Kona\",\"state\":\"HI\",\"zip\":\"96740\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hapuna Beach Prince Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96743",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free Validated parking, $15/Day Self Park overnight, $20/Day Valet overnight.",
+  "ports" : "4",
+  "parking_lot" : "Hapuna Beach Prince Hotel",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.7242700003601",
+    "latitude" : "20.016599999890275",
+    "human_address" : "{\"address\":\"62-100 Kauna&rsquo;oa Dr.\",\"city\":\"Kohala Coast\",\"state\":\"HI\",\"zip\":\"96743\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hilo International Airport",
+  "charging_levels" : "2",
+  "zip_code" : "96720",
+  "restrictions" : "No overnight parking at EV Charger.  Parking fees may apply.",
+  "location" : "In parking lot close to terminal entrance",
+  "hours" : "5:00am - 10:00pm",
+  "manufacturers" : "Recharge Power",
+  "island" : "Hawaii",
+  "charge_fee" : "Free",
+  "park_fee" : "24 hours $10.  16-30 minutes is $1, 31 minutes- 60 minutes $2, 61 minutes-2 hours $5, 2 hours-3 hours $8.",
+  "ports" : "2",
+  "parking_lot" : "Hilo International Airport",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.04482733776695",
+    "latitude" : "19.715577712536007",
+    "human_address" : "{\"address\":\"2450 Kekuanaoa St, Suite 215\",\"city\":\"Hilo\",\"state\":\"HI\",\"zip\":\"96720\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "University of Hawaii at Hilo",
+  "charging_levels" : "2",
+  "zip_code" : "96720",
+  "restrictions" : "Free parking EV Drivers while charging.",
+  "location" : "Attached to lifescience building 3344",
+  "hours" : "24/7",
+  "manufacturers" : "Legrand",
+  "island" : "Hawaii",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers while Charging.",
+  "ports" : "1",
+  "parking_lot" : "University of Hawaii at Hilo",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.08052711669947",
+    "latitude" : "19.699031050655663",
+    "human_address" : "{\"address\":\"200 W. Kawaili Street\",\"city\":\"Hilo\",\"state\":\"HI\",\"zip\":\"96720\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hawaii Electric Company",
+  "charging_levels" : "2",
+  "zip_code" : "96720",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Base Yard Kenoi luehua Baseyard, Hilo Main admin Office",
+  "hours" : "Business Hours",
+  "manufacturers" : "AeroVironment",
+  "island" : "Hawaii",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Hawaii Electric Company",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.07679493027788",
+    "latitude" : "19.71125283703384",
+    "human_address" : "{\"address\":\"1200 Kilauea Ave\",\"city\":\"Hilo\",\"state\":\"HI\",\"zip\":\"96720\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hilton Waikaloa",
+  "charging_levels" : "2",
+  "zip_code" : "96738",
+  "restrictions" : "Free charging until 3/31/2013.  Valet needs to swipe card to activate Charger.   4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "$15/Day Self Park, $20/Day Valet",
+  "ports" : "8",
+  "parking_lot" : "Hilton Waikaloa",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.88694018715248",
+    "latitude" : "19.92262948680053",
+    "human_address" : "{\"address\":\"69-425 Waikoloa Beach Dr.\",\"city\":\"Waikoloa\",\"state\":\"HI\",\"zip\":\"96738\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kona Commons Shopping Center",
+  "charging_levels" : "2",
+  "zip_code" : "96740",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "On side of Sports Authority",
+  "hours" : "8:00am-10:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "Kona Commons Shopping Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.0039729036985",
+    "latitude" : "19.64962554196788",
+    "human_address" : "{\"address\":\"74-5450 Makala Blvd\",\"city\":\"Kailua-Kona\",\"state\":\"HI\",\"zip\":\"96740\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kona International Airport at Keahole",
+  "charging_levels" : "2",
+  "zip_code" : "96740",
+  "restrictions" : "No overnight parking at EV Charger. Parking rates may apply. ",
+  "location" : "1st floor of parking structure across from entrance gate",
+  "hours" : "24/7",
+  "manufacturers" : "Recharge Power",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until further notice, anticipated charging fee: $7/session",
+  "park_fee" : "24 hours $10.  16-30 minutes is $1, 31 minutes- 60 minutes $2, 61 minutes-2 hours $5, 2 hours-3 hours $8.",
+  "ports" : "2",
+  "parking_lot" : "Kona International Airport at Keahole",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.04045859217698",
+    "latitude" : "19.737290520646336",
+    "human_address" : "{\"address\":\"73-200 Kupipi street\",\"city\":\"Kailua-Kona\",\"state\":\"HI\",\"zip\":\"96740\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Mauna Kea Beach Resort",
+  "charging_levels" : "2",
+  "zip_code" : "96743",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  EV driver needs to pick up a key from the office at the first right after entering parking. Parking rates may apply. ",
+  "location" : "South end of the parking lot, near the Valet area",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free Self-Park and Valet during the day,  Registered Guests  have a $20/night parking fee.",
+  "ports" : "4",
+  "parking_lot" : "Mauna Kea Beach Resort",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.7242700003601",
+    "latitude" : "20.016599999890275",
+    "human_address" : "{\"address\":\"62-100 Mauna Kea Beach\",\"city\":\"Kohala Coast\",\"state\":\"HI\",\"zip\":\"96743\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "National Car Rental Kona Airport",
+  "charging_levels" : "2",
+  "zip_code" : "96740",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking rates may apply. ",
+  "location" : "Outside parking, side of the building",
+  "hours" : "5:30am-11:30pm",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "24 hours $10.  16-30 minutes is $1, 31 minutes- 60 minutes $2, 61 minutes-2 hours $5, 2 hours-3 hours $8.",
+  "ports" : "2",
+  "parking_lot" : "National Car Rental Kona Airport",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.9799599996541",
+    "latitude" : "19.650440000006142",
+    "human_address" : "{\"address\":\"Keahole International Airport\",\"city\":\"Kailua-Kona\",\"state\":\"HI\",\"zip\":\"96740\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "West Hawaii Civic Center",
+  "charging_levels" : "2",
+  "zip_code" : "96740",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "1st floor of parking structure in covered structure",
+  "hours" : "7:45am-4:30pm Close first Fri of month and County observed holidays",
+  "manufacturers" : "Better Place",
+  "island" : "Hawaii",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "6",
+  "parking_lot" : "West Hawaii Civic Center",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-155.9799599996541",
+    "latitude" : "19.650440000006142",
+    "human_address" : "{\"address\":\"74-5044 Ane Keohokalole Hwy\",\"city\":\"Kailua-Kona\",\"state\":\"HI\",\"zip\":\"96740\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Grand Hyatt Kauai",
+  "charging_levels" : "2, 3",
+  "zip_code" : "96756",
+  "restrictions" : "Green Car rents out electric and hybrid vehicles from the hotel.  Registered Guests with EVs can also charge.  Parking fees may apply.",
+  "location" : "In the corner of the guest parking closest to the hotel there are 2 spaces at the level 2 Charger reserved for Eves and 4 spaces at the level 3 Charger reserved for EVs",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Kauai",
+  "charge_fee" : "Free",
+  "park_fee" : "$25/day for overnight guests, additional $10 for Valet.",
+  "ports" : "2",
+  "parking_lot" : "Grand Hyatt Kauai",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.44084500965906",
+    "latitude" : "21.87678431070708",
+    "human_address" : "{\"address\":\"1571 Poipu Rd.\",\"city\":\"Koloa\",\"state\":\"HI\",\"zip\":\"96756\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kauai Marriott Resort & Beach Club",
+  "charging_levels" : "2",
+  "zip_code" : "96766",
+  "restrictions" : "Charger use restricted to hotel guests.  Vehicle must be registered at front desk and they will provide a key to activate the Charger. Parking rates may apply ",
+  "location" : "Charging station is located on the Kalapaki Cir. side of the hotel, near the Ha'upu Tower, close to handicap stalls",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Kauai",
+  "charge_fee" : "Free",
+  "park_fee" : "Free parking during the day, Registered Guests have a $16-$19/night parking fee.",
+  "ports" : "2",
+  "parking_lot" : "Kauai Marriott Resort & Beach Club",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.35414137281424",
+    "latitude" : "21.964755991613174",
+    "human_address" : "{\"address\":\"3610 Rice Street\",\"city\":\"Lihue\",\"state\":\"HI\",\"zip\":\"96766\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Marriott Waiohai Beach Club",
+  "charging_levels" : "2",
+  "zip_code" : "96720",
+  "restrictions" : "Green Car rents out electric and hybrid vehicles from the hotel.  Registered Guests with EVs can also charge. Parking rates may apply ",
+  "location" : "Green Car service",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Hawaii",
+  "charge_fee" : "Free",
+  "park_fee" : "Free parking during the day.  $10/Night for Registered Guests.",
+  "ports" : "2",
+  "parking_lot" : "Marriott Waiohai Beach Club",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.46001758041845",
+    "latitude" : "21.878627454871527",
+    "human_address" : "{\"address\":\"2249 Poipu Road\",\"city\":\"Koloa\",\"state\":\"HI\",\"zip\":\"96720\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Princeville Shopping Center",
+  "charging_levels" : "2",
+  "zip_code" : "96722",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Rear parking lot, next to public restrooms",
+  "hours" : "24/7",
+  "manufacturers" : "Volta",
+  "island" : "Kauai",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Princeville Shopping Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.47352637220382",
+    "latitude" : "22.213130749665254",
+    "human_address" : "{\"address\":\"5-4280 Kuhio Highway\",\"city\":\"Princeville\",\"state\":\"HI\",\"zip\":\"96722\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Sheraton Kauai",
+  "charging_levels" : "2",
+  "zip_code" : "96756",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "Attached to the shack near the luau lawn",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Kauai",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free for Day Guests.  $30/night for Registered Guests.",
+  "ports" : "3",
+  "parking_lot" : "Sheraton Kauai",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.46220390785493",
+    "latitude" : "21.876721358165014",
+    "human_address" : "{\"address\":\"2440 Hoonani Rd.\",\"city\":\"Koloa\",\"state\":\"HI\",\"zip\":\"96756\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Westin Princeville Resort",
+  "charging_levels" : "2",
+  "zip_code" : "96722",
+  "restrictions" : "Free charging until 3/31/2013.  EV Drivers need to use Valet to Charge.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Kauai",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free for Day Guests.  $9/night Registered Guests.",
+  "ports" : "4",
+  "parking_lot" : "Westin Princeville Resort",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.46853434707594",
+    "latitude" : "22.221943074619873",
+    "human_address" : "{\"address\":\"3838 Wylie Rd\",\"city\":\"Princeville\",\"state\":\"HI\",\"zip\":\"96722\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Bio-Beetle ECO Rental Cars",
+  "charging_levels" : "1",
+  "zip_code" : "96732",
+  "restrictions" : "Allowing customers to plug in their own Level 1 Charger to outlet,  private to customers by appointment.  ",
+  "location" : "By appointment and for Bio-Beetle customers only.",
+  "hours" : "By appointment and for Bio-Beetle customers only.",
+  "manufacturers" : "Bring your own cordset/Level 1 Charger",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Bio-Beetle ECO Rental Cars",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.46060783511692",
+    "latitude" : "20.89518125803988",
+    "human_address" : "{\"address\":\"55 Amala Place\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "County Building, Wailuku",
+  "charging_levels" : "2, 3",
+  "zip_code" : "96793",
+  "restrictions" : "Maui County YouTube video on how to use level 3 Charger http://www.youtube.com/watch?v=Aj_2zcCSUQg.  $20 deposit required to activate charging station.  Parking fees may apply.",
+  "location" : "Directly in front of County Building, outdoor lot. Spot is painted green, sign for Eves.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "There is a $20 deposit for key to activate Charger, pick up at the Maui County Business Resource Center.  Deposit will be returned when key is returned.",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "2",
+  "parking_lot" : "County Building, Wailuku",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.5046395229772",
+    "latitude" : "20.885353719166176",
+    "human_address" : "{\"address\":\"200 south High Street\",\"city\":\"Wailuku\",\"state\":\"HI\",\"zip\":\"96793\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Enterprise Rent A Car",
+  "charging_levels" : "1",
+  "zip_code" : "96732",
+  "restrictions" : "Restricted to customers",
+  "location" : "Across the Hana Hwy from the Mercedes dealership. Access from the Hana Hwy. Since this is a rental car location access to the one charge port is by availability only. This charge spot is next to Maui Mall",
+  "hours" : "7:00am-5:00pm",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Enterprise Rent A Car",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.46278507573356",
+    "latitude" : "20.89194574964091",
+    "human_address" : "{\"address\":\"40 Hana Hwy\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Four Seasons Maui (Wailea)",
+  "charging_levels" : "2",
+  "zip_code" : "96753",
+  "restrictions" : "Free charging until 3/31/2013.  Valet recommended, self-parking needs FOB key from front desk.   4 hour limit on EV Charging. Parking fees may apply.",
+  "location" : "Self-park at spaces 167 and 169 (at end of row on left) in Valet/Self Park garage. Move the cone that’s there to prevent non-EV parking. Hint: Valet atHotel Wailea will drive you to/from Four Seasons garage for tip, other hotel valets may if you ask.",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Maui",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free for day guests, $20/day for overnight guests",
+  "ports" : "2",
+  "parking_lot" : "Four Seasons Maui (Wailea)",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.4411963343861",
+    "latitude" : "20.679442862484365",
+    "human_address" : "{\"address\":\"3900 Wailea Alanui\",\"city\":\"Wailea\",\"state\":\"HI\",\"zip\":\"96753\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Jim Falk  Motors of Maui",
+  "charging_levels" : "2",
+  "zip_code" : "96732",
+  "restrictions" : "Restricted to Customers only.",
+  "location" : "Charging Station is in the front of the lot.",
+  "hours" : "7:30am-8:00pm",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "3",
+  "parking_lot" : "Jim Falk  Motors of Maui",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.45805464185946",
+    "latitude" : "20.888663224233994",
+    "human_address" : "{\"address\":\"260 Hana Hwy\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kahana Gateway",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "Charge spots located in the rear of the shopping center underneath the building down from the Shell Station and Kahana Koin-Op.",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Maui",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Kahana Gateway",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.67669781362287",
+    "latitude" : "20.97332540007227",
+    "human_address" : "{\"address\":\"4405 Honoapiilani Hwy\",\"city\":\"Kahana\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kihei Town Center",
+  "charging_levels" : "2",
+  "zip_code" : "96753",
+  "restrictions" : "Free charging until 3/31/2013.   4 hour limit. Parking rates may apply. ",
+  "location" : "In front of “Happy Nails” between Sansei and Cuatro Restaurants, near Police Station & Rainbow Attic at 24/7 Kihei Foodland",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Maui",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Kihei Town Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.45264072324306",
+    "latitude" : "20.73335030977387",
+    "human_address" : "{\"address\":\"1881 S Kihei Rd\",\"city\":\"Kihei\",\"state\":\"HI\",\"zip\":\"96753\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Marriott Maui Ocean Club",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Parking rates may apply",
+  "location" : "Located in the Valet station",
+  "hours" : "24/7",
+  "manufacturers" : "ChargePoint",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "$14/Day for Self-Park, $16/Day Valet",
+  "ports" : "1",
+  "parking_lot" : "Marriott Maui Ocean Club",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.6945403626842",
+    "latitude" : "20.91616449188996",
+    "human_address" : "{\"address\":\"100 Nohea Kai Drive\",\"city\":\"Lahaina\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Marriot Wailea Beach",
+  "charging_levels" : "2",
+  "zip_code" : "96753",
+  "restrictions" : "Valet recommended.  Self-parking needs FOB key from front desk. Parking rates may apply ",
+  "location" : "Valet recommended",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "Free, TBD",
+  "park_fee" : "Free for Restaurant Guests with Validation.  $30/Day Self-Park, additional $30/Day to Valet",
+  "ports" : "2",
+  "parking_lot" : "Marriot Wailea Beach",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.43965069932614",
+    "latitude" : "20.688015538311618",
+    "human_address" : "{\"address\":\"3700 Wailea Alanui Dr.\",\"city\":\"Wailea\",\"state\":\"HI\",\"zip\":\"96753\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Maui Beach Hotel",
+  "charging_levels" : "1",
+  "zip_code" : "96732",
+  "restrictions" : "Restricted to Hotel Guests. Parking rates may apply ",
+  "location" : "Ask Front Desk at Check In",
+  "hours" : "24/7",
+  "manufacturers" : "Bring your own cordset/Level 1 Charger",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Maui Beach Hotel",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.47218299093976",
+    "latitude" : "20.88967945812709",
+    "human_address" : "{\"address\":\"170 Kaahumanu Avenue\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Maui Electric Company",
+  "charging_levels" : "2",
+  "zip_code" : "96732",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Located next to each other, in front of public entrance for customer service & bill payment.",
+  "hours" : "24/7",
+  "manufacturers" : "ChargePoint",
+  "island" : "Maui",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Maui Electric Company",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.4636484248817",
+    "latitude" : "20.896199542839497",
+    "human_address" : "{\"address\":\"200 Hobron Avenue\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ritz Carlton Kapaalua",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Parking rates may apply ",
+  "location" : "Outdoor parking lot close to entrance for employees, EV station labeled, where buses and big vehicles parked",
+  "hours" : "24/7",
+  "manufacturers" : "Pep Stations",
+  "island" : "Maui",
+  "charge_fee" : "Free until further notice,  fee amount TBD",
+  "park_fee" : "Free for Day Guests.  $10/Night Self-Park, $18/Night Valet for Registered Guests",
+  "ports" : "2",
+  "parking_lot" : "Ritz Carlton Kapaalua",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.6538299170569",
+    "latitude" : "21.00072919963964",
+    "human_address" : "{\"address\":\"1 Ritz-Carlton Drive\",\"city\":\"Kapalua\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Sheraton Maui",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Need FOB key from front desk to activate charger.  Parking fees may apply.",
+  "location" : "On 2nd floor of parking garage.",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Maui",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "$1 for 3 hours with Validation from Restaurant if you spend $20 or more.  $30/Day for Registered Guests",
+  "ports" : "2",
+  "parking_lot" : "Sheraton Maui",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.6749199996581",
+    "latitude" : "20.92039999976032",
+    "human_address" : "{\"address\":\"2605 Ka&rsquo;anapali Parkway\",\"city\":\"Lahaina\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Wailea Beach  Marriott",
+  "charging_levels" : "2",
+  "zip_code" : "96753",
+  "restrictions" : "Need FOB key to activate Charging Station in self-parking.  Parking fees may apply.",
+  "location" : "One in valet, one is in paid parking both on first floor adjacent to lobby.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "Free ",
+  "park_fee" : "$25 Self Park, $30 Valet, $30/Day Resort fee includes parking for Registered Guests",
+  "ports" : "2",
+  "parking_lot" : "Wailea Beach  Marriott",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.43965069932614",
+    "latitude" : "20.688015538311618",
+    "human_address" : "{\"address\":\"3700 Wailea Alanui\",\"city\":\"Wailea\",\"state\":\"HI\",\"zip\":\"96753\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Wal-Mart",
+  "charging_levels" : "2",
+  "zip_code" : "96732",
+  "restrictions" : "Requires a Blink card for use.  Parking fees may apply.",
+  "location" : "In the back by the garden center",
+  "hours" : "24/7",
+  "manufacturers" : "Blink",
+  "island" : "Maui",
+  "charge_fee" : "Free.  There will be a charge via AV FOB and/or credit card soon.",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Wal-Mart",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.45662471983286",
+    "latitude" : "20.87761055649389",
+    "human_address" : "{\"address\":\"101 Pakaula Street\",\"city\":\"Kahului\",\"state\":\"HI\",\"zip\":\"96732\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Westin Kaanapali Resort and Spa",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "Ground level of parking lot",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Maui",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Valet Free for Day Guests with Validation, $18/Day without Validation. Self-Parking restricted to Registered Guests and included in resort fee.",
+  "ports" : "4",
+  "parking_lot" : "Westin Kaanapali Resort and Spa",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.6749199996581",
+    "latitude" : "20.92039999976032",
+    "human_address" : "{\"address\":\"2365 Ka&rsquo;anapali Parkway\",\"city\":\"Lahaina\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ala Moana Center",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Volta chargers are free.  Better Place chargers are free until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "2 Charging stations are located in front of Genki Sushi. Take the Keeaumoku entrance up the ramp and turn right. Charging stations will be on the right. 2 Chargers ground level right below. Volta charger on the 2nd level by Keeaumoku entrance to mall.",
+  "hours" : "Mall hours, 7:00am-9:30pm",
+  "manufacturers" : "Better Place, Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Volta chargers are free.  Better Place chargers are free until 3/31/2013",
+  "park_fee" : "Free",
+  "ports" : "9",
+  "parking_lot" : "Ala Moana Center",
+  "number_of_stations" : "5",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8421921839348",
+    "latitude" : "21.289311188287115",
+    "human_address" : "{\"address\":\"1450 Ala Moana Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Aloha Island Mart Kahala",
+  "charging_levels" : "3",
+  "zip_code" : "96816",
+  "restrictions" : "Retrieve a FOB key with your drivers license from inside the store to activate the charging station.   Parking fees may apply.",
+  "location" : "In the parking lot.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Aloha Island Mart Kahala",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.78427584524786",
+    "latitude" : "21.27824053410643",
+    "human_address" : "{\"address\":\"4339 Waialae Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96816\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Aloha Island Mart Waipio-Gentry",
+  "charging_levels" : "3",
+  "zip_code" : "96797",
+  "restrictions" : "Retrieve a FOB key with your drivers license from inside the store to activate the charging station.   Parking fees may apply.",
+  "location" : "In the parking lot.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Aloha Island Mart Waipio-Gentry",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.99960051872316",
+    "latitude" : "21.41153804528932",
+    "human_address" : "{\"address\":\"94-826 Ukee St\",\"city\":\"Waipahu\",\"state\":\"HI\",\"zip\":\"96797\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Aloha Stadium",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Free charging until 3/31/2013.  FOB key required to activate charging station.   4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Enter the main salt lake gate 1, turn right at sections 3D and 4D, make a right turn at 2A and proceed to park in the marked stall",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Varies by event.",
+  "ports" : "2",
+  "parking_lot" : "Aloha Stadium",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.93368920719575",
+    "latitude" : "21.371864453966737",
+    "human_address" : "{\"address\":\"Salt Lake Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Aulani A Disney Resort and Spa, Ko Olina",
+  "charging_levels" : "2",
+  "zip_code" : "96707",
+  "restrictions" : "Free parking (4 hours max) with restaurant purchase of $35 or more.  Other parking fees may apply.",
+  "location" : "Parking Garage 1, closest stalls to the elevator on two floors.  12 Charging stations; Spaces 250-254, 393-397, and 498-499",
+  "hours" : "24/7",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free parking (4 hour max) for guests spending more than $35.00 at the restaurant, hourly rate: 1st half hour free, 2nd $10.00, $5.00 thereafter with a max fee of $35.00",
+  "ports" : "12",
+  "parking_lot" : "Aulani A Disney Resort and Spa, Ko Olina",
+  "number_of_stations" : "12",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.12284360961843",
+    "latitude" : "21.340239794806394",
+    "human_address" : "{\"address\":\"92-1185 Aliinui Drive\",\"city\":\"Kapolei\",\"state\":\"HI\",\"zip\":\"96707\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Best Western Plaza Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96819",
+  "restrictions" : "Restricted to registered guests and their visitors.  Retrieve a FOB key from the front desk to activate charging station.  Parking fees may apply.",
+  "location" : "Self-parking next to security as soon as you enter",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$25/day for registered guests, $12/day for registered guests that are HI residents.  Free parking for the visitors of registered guests.",
+  "ports" : "2",
+  "parking_lot" : "Best Western Plaza Hotel",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.9131037259451",
+    "latitude" : "21.33653458804565",
+    "human_address" : "{\"address\":\"3253 N. Nimitz Highway\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96819\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Bishop Museum",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : "4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Located in the rear parking area",
+  "hours" : "Wed-Mon 9:00am-5:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "Bishop Museum",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86936304388902",
+    "latitude" : "21.333122240610425",
+    "human_address" : "{\"address\":\"1525 Bernice St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Central Pacific Plaza",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "On 2nd Floor of parking garage",
+  "hours" : "Mon-Fri 7:00am-7:00pm, Sat 7:00am-3:00pm, Sun closed",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Hourly maximum rate of $42.00",
+  "ports" : "2",
+  "parking_lot" : "Central Pacific Plaza",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86053835333252",
+    "latitude" : "21.30729762887313",
+    "human_address" : "{\"address\":\"220 S. King St\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Davies Pacific Center",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "1st 2 hours of charging free, $5 every additional hour.  Use your smart phone to charge by credit card at the Charger, instructions on the screen. Parking fees may apply.",
+  "location" : "6th floor",
+  "hours" : "24/7",
+  "manufacturers" : "SemaConnect",
+  "island" : "Oahu",
+  "charge_fee" : "1st 2 hours free, $5 every additional hour",
+  "park_fee" : "15-30 minutes $4, each additional 30 minutes is $4",
+  "ports" : "1",
+  "parking_lot" : "Davies Pacific Center",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86244491603463",
+    "latitude" : "21.307783262768965",
+    "human_address" : "{\"address\":\"841 Bishop Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "DFS Waikiki Galleria",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "The Charger is located at Level 5B",
+  "hours" : "9:00am-11:00pm",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$3/30 Minutes",
+  "ports" : "2",
+  "parking_lot" : "DFS Waikiki Galleria",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82819873315887",
+    "latitude" : "21.28042588663766",
+    "human_address" : "{\"address\":\"330 Royal Hawaiian Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Embassy Suites Waikiki",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$6.00/4 hours with restaurant validation, $3.00/half hour thereafter.  $30/day for overnight guests (in/out parking). ",
+  "ports" : "2",
+  "parking_lot" : "Embassy Suites Waikiki",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82469000024318",
+    "latitude" : "21.278030000184515",
+    "human_address" : "{\"address\":\"201 Beach Walk Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Enterprise Rent A Car Honolulu Airport",
+  "charging_levels" : "2",
+  "zip_code" : "96818",
+  "restrictions" : "Restricted to customers.  4 hour limit on EV charging.",
+  "location" : "EV Charging Station is on the side of the building next to the pillars.",
+  "hours" : "6:00am-10:30pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "Enterprise Rent A Car Honolulu Airport",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.91460559373402",
+    "latitude" : "21.333395954163393",
+    "human_address" : "{\"address\":\"3255 Aolele St\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96818\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Enterprise Rent-a-Car, Kaneohe",
+  "charging_levels" : "2",
+  "zip_code" : "96744",
+  "restrictions" : "Restricted to customers.   4 hour limit on EV Charging.",
+  "location" : "In front of the Enterprise office at the intersection of Kahuhipa St and Alaloa St.",
+  "hours" : "Mon-Fri 8:00am-6:00pm, Sat 9:00am-12:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "3",
+  "parking_lot" : "Enterprise Rent-a-Car, Kaneohe",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.80532318199687",
+    "latitude" : "21.416506215332234",
+    "human_address" : "{\"address\":\"46-003 Alaloa St.\",\"city\":\"Kaneohe\",\"state\":\"HI\",\"zip\":\"96744\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Enterprise Rent-a-Car, Waikiki",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Restricted to customers.  4 hour limit on EV Charging. ",
+  "location" : "EV Charging station is in the back of the lot.",
+  "hours" : "7:00am-8:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "Enterprise Rent-a-Car, Waikiki",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8247093636852",
+    "latitude" : "21.277323225636565",
+    "human_address" : "{\"address\":\"151 Kaiulani St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ewa Town Center",
+  "charging_levels" : "2",
+  "zip_code" : "96706",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Next to Blockbusters and Starbucks building facing Fort Weaver Rd",
+  "hours" : "7:00am-9:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Ewa Town Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.02317141687146",
+    "latitude" : "21.333769206953146",
+    "human_address" : "{\"address\":\"91-1401 Ft Weaver Rd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96706\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hawaii Prince Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "In level E of the parking garage",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "$5.00/hour for visitors.  $17/day for registered guests, $23.00/day valet services. Validations offered by restaurants within hotel",
+  "ports" : "4",
+  "parking_lot" : "Hawaii Prince Hotel",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.84029461445297",
+    "latitude" : "21.286010676439616",
+    "human_address" : "{\"address\":\"100 Holomoana St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hilton Hawaiian Village",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "On the 2nd floor of the parking garage across from Kalia Tower",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "$24.00 fee for overnight guests, $30.00 valet services. Visitors fee $8.00/hour. Validations offered at any food and beverage facility within the hotel",
+  "ports" : "4",
+  "parking_lot" : "Hilton Hawaiian Village",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83574728358352",
+    "latitude" : "21.28477333511022",
+    "human_address" : "{\"address\":\"2003 Kalia Rd.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hilton Waikiki Prince",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Valet Only",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$3/3 hours with Restaurant Validation, Registered Guests $25/night, Special Functions $15",
+  "ports" : "2",
+  "parking_lot" : "Hilton Waikiki Prince",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82233515352786",
+    "latitude" : "21.275389683273545",
+    "human_address" : "{\"address\":\"2500 Kuhio Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "HMSA Center",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "On ground floor of parking lot",
+  "hours" : "Mon-Thurs 7:00am-12:00am, Fri 7:00am-2:00am, Sat 3:00pm-2:00pm, Sun 9:00am-12:00am",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "0-30 minutes $1.50, each additional 30 minute $1.50, max $30",
+  "ports" : "2",
+  "parking_lot" : "HMSA Center (Hawaii Medical Service)",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.840879173772",
+    "latitude" : "21.297018378078235",
+    "human_address" : "{\"address\":\"818 Keeaumoku St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hokua Condominium",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "On ground level of parking garage near loading dock",
+  "hours" : "6:00am-2:00am",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Hokua Condominium",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.84994433982735",
+    "latitude" : "21.29181130352856",
+    "human_address" : "{\"address\":\"1288 Ala Moana Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Holiday Inn Beachcomber",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Valet Only",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$30.00/24hours. $15.00/24hours for HI residents.$3.50/half hour",
+  "ports" : "2",
+  "parking_lot" : "Holiday Inn Beachcomber",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8275152484166",
+    "latitude" : "21.277871812074466",
+    "human_address" : "{\"address\":\"2300 Kalakaua Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Iolani School",
+  "charging_levels" : "2",
+  "zip_code" : "96826",
+  "restrictions" : "Restricted to guests of Iolani.  Parking fees may apply.",
+  "location" : "Guest Stall",
+  "hours" : "9:00am-3:00pm the lot is reserved for school staff, after 3:00pm the lot is open to those attending special events at Iolani",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Iolani School",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82475281350472",
+    "latitude" : "21.286347176348407",
+    "human_address" : "{\"address\":\"563 Kamoku Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96826\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kahala Mall",
+  "charging_levels" : "2",
+  "zip_code" : "96816",
+  "location" : "Across from Whole Foods on the 1st floor",
+  "hours" : "Mon-Sat 10:00am-9:00pm, Sun 10:00am-5:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Kahala Mall",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.78658710286317",
+    "latitude" : "21.278465364613794",
+    "human_address" : "{\"address\":\"4211 Waialae Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96816\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kailua Shell",
+  "charging_levels" : "3",
+  "zip_code" : "96734",
+  "location" : "Special key available in the store.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Kailua Shell",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.7432487742712",
+    "latitude" : "21.3947297165617",
+    "human_address" : "{\"address\":\"434 Kuulei Rd\",\"city\":\"Kailua\",\"state\":\"HI\",\"zip\":\"96734\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kaimuki Shopping Center",
+  "charging_levels" : "2",
+  "zip_code" : "96816",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Outdoor open lot",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for customers",
+  "ports" : "2",
+  "parking_lot" : "Kaimuki Shopping Center",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.80755929258643",
+    "latitude" : "21.287044896773295",
+    "human_address" : "{\"address\":\"3221 Waialae Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96816\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kaiser Permanente Mapunapuna",
+  "charging_levels" : "2",
+  "zip_code" : "96819",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "One floor outdoor facility",
+  "hours" : "Mon-Fri 8:00am-5:00pm, Sat 8:00am-12:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "1st 3 hours free.  $1 every hour thereafter.",
+  "ports" : "1",
+  "parking_lot" : "Kaiser Permanente Mapunapuna",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.89474856332708",
+    "latitude" : "21.345051167663144",
+    "human_address" : "{\"address\":\"2828 Paa Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96819\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kaiser Permanente Moanalua Medical Center",
+  "charging_levels" : "2",
+  "zip_code" : "96819",
+  "restrictions" : "Parking fees may apply",
+  "location" : "2nd floor.",
+  "hours" : "Mon-Fri 8:30am-5:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "1st 3 hours free.  $1 every hour thereafter.",
+  "ports" : "1",
+  "parking_lot" : "Kaiser Permanente Moanalua Medical Center",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.90030637346817",
+    "latitude" : "21.362489021811257",
+    "human_address" : "{\"address\":\"3288 Moanalua Road\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96819\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kaiser Permanente Waipio",
+  "charging_levels" : "2",
+  "zip_code" : "96797",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Enter the parking lot and continue towards the Ewa side of the main building. One pedestal charging station is next to the handicap stalls on the building side.",
+  "hours" : "24/7",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for Employees and Patients",
+  "ports" : "1",
+  "parking_lot" : "Kaiser Permanente Waipio",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.99796942170946",
+    "latitude" : "21.425325812664497",
+    "human_address" : "{\"address\":\"94-1480 Moaniani St.\",\"city\":\"Waipahu\",\"state\":\"HI\",\"zip\":\"96797\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kapolei Commons",
+  "charging_levels" : "2",
+  "zip_code" : "96707",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "In the front parking near Down to Earth",
+  "hours" : "7:00am-9:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until Dec 31st 2012, 4 hours at a time",
+  "park_fee" : "Free for customers",
+  "ports" : "2",
+  "parking_lot" : "Kapolei Commons",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.0914212979147",
+    "latitude" : "21.328854377915434",
+    "human_address" : "{\"address\":\"4450 Kapolei Parkway\",\"city\":\"Kapolei\",\"state\":\"HI\",\"zip\":\"96707\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kapolei Shopping Center",
+  "charging_levels" : "2",
+  "zip_code" : "96707",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking rates may apply. ",
+  "location" : "Between Longs and Safeway in front of Subway",
+  "hours" : "8:00am-10:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free for customers",
+  "ports" : "2",
+  "parking_lot" : "Kapolei Shopping Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.0784440810319",
+    "latitude" : "21.33845913718835",
+    "human_address" : "{\"address\":\"590 Farrington Hwy\",\"city\":\"Kapolei\",\"state\":\"HI\",\"zip\":\"96707\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Keola Lai Condominium",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking rates may apply. ",
+  "location" : "Public charge spot on 1st floor of parking garage. Guest spot located on 3rd floor",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free for Guests",
+  "ports" : "4",
+  "parking_lot" : "Keola Lai Condominium",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8581101838534",
+    "latitude" : "21.302297398390238",
+    "human_address" : "{\"address\":\"600 Queen St\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "King Windward Nissan",
+  "charging_levels" : "2",
+  "zip_code" : "96744",
+  "restrictions" : "Restricted to Leafs only. Parking rates may apply ",
+  "location" : "EV Charger is located in front of the dealership, all the way to the left.",
+  "hours" : "7:00am-8:00pm, by reservation",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "King Windward Nissan",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.79902564501552",
+    "latitude" : "21.399453085430384",
+    "human_address" : "{\"address\":\"45-568 Kamehameha Hwy\",\"city\":\"Kaneohe\",\"state\":\"HI\",\"zip\":\"96744\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Laie Village Center",
+  "charging_levels" : "2",
+  "zip_code" : "96762",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "In front parking lot",
+  "hours" : "8:00am-7:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until Dec 31st 2012, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Laie Village Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.92152970923166",
+    "latitude" : "21.647158676827154",
+    "human_address" : "{\"address\":\"55-510 Kamehameha Hwy\",\"city\":\"Laie\",\"state\":\"HI\",\"zip\":\"96762\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Longs Drugs",
+  "charging_levels" : "2",
+  "zip_code" : "96734",
+  "restrictions" : "2 hour limit on charging",
+  "location" : "Parking stall in front of entrance",
+  "hours" : "8:00am-9:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free for up to 2 hours",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Longs Drugs",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.74199871665047",
+    "latitude" : "21.394001265717975",
+    "human_address" : "{\"address\":\"609 Kailua Road\",\"city\":\"Kailua\",\"state\":\"HI\",\"zip\":\"96734\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Mark’s Garage",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking rates may apply.",
+  "location" : "3rd floor of parking garage",
+  "hours" : "Mon 5:45am-10:00pm, Tue 10:45am-12:00am, Wed-Fri 5:45am-2:00am, Sat 7:00am-2:00am",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "$10.00 Flat rate",
+  "ports" : "2",
+  "parking_lot" : "Mark’s Garage",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86094481970065",
+    "latitude" : "21.311183536789333",
+    "human_address" : "{\"address\":\"22 S. Pauahi St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Marriot Waikiki Beach",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Front desk Security Manager needs to activate Charger.  Parking fees may apply.",
+  "location" : "Self-park",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "32 self park 37 valet. Restaurant Guests can get validation for 5 hours for free then 4$ every half hour after",
+  "ports" : "1",
+  "parking_lot" : "Marriot Waikiki Beach",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82323447555714",
+    "latitude" : "21.272511852779814",
+    "human_address" : "{\"address\":\"2552 Kalakaua Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Moanalua Shopping Center",
+  "charging_levels" : "2",
+  "zip_code" : "96818",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking rates may apply. ",
+  "location" : "In front of Subway",
+  "hours" : "7:00am-9:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Moanalua Shopping Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.92813395368722",
+    "latitude" : "21.343776924855927",
+    "human_address" : "{\"address\":\"930 Valkenburgh St\",\"city\":\"Pearl City\",\"state\":\"HI\",\"zip\":\"96818\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "New City Nissan",
+  "charging_levels" : "2",
+  "zip_code" : "96819",
+  "restrictions" : "Restricted to Leafs only. ",
+  "location" : "3 charging stalls are located in front right of the building.",
+  "hours" : "6:30am-8:00pm",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free for all Nissan Leafs",
+  "park_fee" : "Free",
+  "ports" : "3",
+  "parking_lot" : "New City Nissan",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8816364481399",
+    "latitude" : "21.33549137449171",
+    "human_address" : "{\"address\":\"2295 North King Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96819\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Nimitz Center",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : "  Restricted to Enterprise Fleet EVs only.  Free charging until 3/31/2013.  4 hour limit. Parking fees may apply. ",
+  "location" : "Charge Spot is located at Enterprise Rent-a-Car parking in rear of garage",
+  "hours" : "8:00am-9:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "First 2-hours free for customers",
+  "ports" : "2",
+  "parking_lot" : "Nimitz Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.87623425225317",
+    "latitude" : "21.319174147958822",
+    "human_address" : "{\"address\":\"1130 North Nimitz Hwy\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ohana Honolulu Airport",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Need attendant to activate Charger. Parking rates may apply",
+  "location" : "located to second building",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "25$ guest/overnight, $12 for military and HI residents with ID, no charge for day",
+  "ports" : "1",
+  "parking_lot" : "Ohana Honolulu Airport",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.9174564445669",
+    "latitude" : "21.33722706600821",
+    "human_address" : "{\"address\":\"3401 N. Nimitz Hwy,\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ohana Waikiki East",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Restricted use to Guests.  Need FOB key to activate Charger in self-parking. Parking rates may apply ",
+  "location" : "Located on the first floor near entrance",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Guests $25.00 overnight. HI residents $12.00 overnight, $7.00 flat rate available on Mondays between 5am-12pm. First 3 hours for free with Dukes validation, 3$/half hour",
+  "ports" : "2",
+  "parking_lot" : "Ohana Waikiki East",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82488922809105",
+    "latitude" : "21.277494096822124",
+    "human_address" : "{\"address\":\"150 Kaiulani Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ohana Waikiki Malia",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "See attendant for FOB key to activate charger. Parking fees may apply.",
+  "location" : "2nd level, at entrance",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Guests $25.00 overnight, HI residents $10.00. 1hour free with validation from Ihop or Rivals bar with a purchase of $20.00 or more. 3$/half hour.",
+  "ports" : "2",
+  "parking_lot" : "Ohana Waikiki Malia",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8279019568892",
+    "latitude" : "21.280911520533493",
+    "human_address" : "{\"address\":\"2211 Kuhio Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ohana Waikiki West",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Need attendant to activate Charger. Parking fees may apply. ",
+  "location" : "Self park, lobby level",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Guests $25.00 overnight . HI residents $10.00 over night. $3.00/half hour",
+  "ports" : "2",
+  "parking_lot" : "Ohana Waikiki West",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82506909249693",
+    "latitude" : "21.278564290037025",
+    "human_address" : "{\"address\":\"2330 Kuhio Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Outrigger Reef",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Self-Park in garage outside valet, basement level",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free until further notice,  fee amount TBD",
+  "park_fee" : "$25.00 overnight, $10.00 HI residents, but rate will go up on 12/22/2012 (TBA)",
+  "ports" : "1",
+  "parking_lot" : "Outrigger Reef",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83238957381542",
+    "latitude" : "21.278906032408145",
+    "human_address" : "{\"address\":\"2169 Kalia Road\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Outrigger Waikiki",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply ",
+  "location" : "Basement of garage, valet",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$35.00 for guests and HI residents overnight. $4.00/half hour",
+  "ports" : "1",
+  "parking_lot" : "Outrigger Waikiki",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82731739757017",
+    "latitude" : "21.27763798834684",
+    "human_address" : "{\"address\":\"2335 Kalakaua Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Pearlridge Shopping Center (downtown)",
+  "charging_levels" : "2",
+  "zip_code" : "96701",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Downtown parking lot fronting the entrance of Cold Stone Creamery",
+  "hours" : "Mon-Sat 10:00am-9:00pm, Sun 10:00am-6:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for customers",
+  "ports" : "1",
+  "parking_lot" : "Pearlridge Shopping Center (downtown)",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.94082083088813",
+    "latitude" : "21.385934347115153",
+    "human_address" : "{\"address\":\"98-1005 Moanalua Rd (downtown)\",\"city\":\"Aiea\",\"state\":\"HI\",\"zip\":\"96701\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Pearlridge Shopping Center (uptown)",
+  "charging_levels" : "2",
+  "zip_code" : "96701",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Uptown parking lot fronting the main food court entrance",
+  "hours" : "Mon-Sat 10:00am-9:00pm, Sun 10:00am-6:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for customers",
+  "ports" : "1",
+  "parking_lot" : "Pearlridge Shopping Center (uptown)",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.94082083088813",
+    "latitude" : "21.385934347115153",
+    "human_address" : "{\"address\":\"98-1005 Moanalua Rd (uptown)\",\"city\":\"Aiea\",\"state\":\"HI\",\"zip\":\"96701\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Polynesian Cultural Center",
+  "charging_levels" : "2",
+  "zip_code" : "96762",
+  "restrictions" : "Free parking until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "Enter main entrance, stay to right on circle, take a right, drive 15 meters and the Charge Spot will be on your left in the front row",
+  "hours" : "11:00am-10:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : "Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "$8/Day, cash only",
+  "ports" : "2",
+  "parking_lot" : "Polynesian Cultural Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.91929194484317",
+    "latitude" : "21.638913194296748",
+    "human_address" : "{\"address\":\"55-370 Kamehameha Hwy\",\"city\":\"Laie\",\"state\":\"HI\",\"zip\":\"96762\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Queen’s Physician Office Building",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Chargers are available for use through self-parking or Valet, the Valet must activate Charger.  Parking fees may apply.",
+  "location" : "1 Charger at POB 1 lot on Lusitaina St. Main entry Makai side level 3, 2nd Charger at Miller St. garage across emergency room level B2 near cashiers booth",
+  "hours" : "24/7",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free until further notice, anticipated fee will be $2.00/hour",
+  "park_fee" : "Patients $1/half hour max 5$. Visitors can get validation $5 flat rate.",
+  "ports" : "6",
+  "parking_lot" : "Queen’s Physician Office Building",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.85289411608346",
+    "latitude" : "21.308592652595337",
+    "human_address" : "{\"address\":\"1380 Lusitania street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Sheraton Waikiki",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Charging stations free with parking validation.  4 hour limit on charging.  Need FOB key from front desk to activate Charging station.  Parking fees may apply.   ",
+  "location" : "3rd floor parking garage",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "park_fee" : "$10.00 resort fee included for registered guests to self park. Guests visiting for the day can get a validation at the hotel.",
+  "ports" : "6",
+  "parking_lot" : "Sheraton Waikiki",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82857644841118",
+    "latitude" : "21.278717174782003",
+    "human_address" : "{\"address\":\"2255 Kalakaua Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Stadium Marketplace",
+  "charging_levels" : "2",
+  "zip_code" : "96818",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "Between office max and checkers",
+  "hours" : "7:00am-9:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "Stadium Marketplace",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.92906669196518",
+    "latitude" : "21.365303899762978",
+    "human_address" : "{\"address\":\"4561 Salt Lake Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96818\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "The Pan Am Building",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "First 2 hours of charging are free, $5 every additional hour.  Use your smart phone to charge by credit card at the Charger, instructions on the screen.  Call 1-800 number to sign up for a card.  Parking fees may apply.",
+  "location" : "2nd floor, up the ramp take 2 left turns",
+  "hours" : "Mon-Fri 6:00am-10:00pm, Sat 7:00am-5:00pm, Sun closed",
+  "manufacturers" : "SemaConnect",
+  "island" : "Oahu",
+  "charge_fee" : "1st 2 hours free, $5 every additional hour",
+  "park_fee" : "$2.00 for every half hour. Some offices offer validations",
+  "ports" : "1",
+  "parking_lot" : "The Pan Am Building",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83970106191362",
+    "latitude" : "21.29189224251121",
+    "human_address" : "{\"address\":\"1600 Kapiolani Boulevard\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "TOPA Financial Center",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "Parking garage basement level",
+  "hours" : "5:00am-8:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "$3.25/half hour, Some offices offer validations",
+  "ports" : "4",
+  "parking_lot" : "TOPA Financial Center",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86340719060598",
+    "latitude" : "21.3072256831108",
+    "human_address" : "{\"address\":\"700 Bishop St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Town Center of Mililani",
+  "charging_levels" : "2",
+  "zip_code" : "96789",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit.  Parking fees may apply.",
+  "location" : "In front of Baskin Robins",
+  "hours" : "7:00am-10:00pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Town Center of Mililani",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.00784762085445",
+    "latitude" : "21.453248200399102",
+    "human_address" : "{\"address\":\"95-1249 Meheula Pkwy\",\"city\":\"Mililani\",\"state\":\"HI\",\"zip\":\"96789\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Turtle Bay Resort",
+  "charging_levels" : "2",
+  "zip_code" : "96731",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "Near beach access parking",
+  "hours" : "24/7",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Parking fee included for registered guests. No charge for visitors parked at the public beach access stalls.$15.00/day for Valet services",
+  "ports" : "6",
+  "parking_lot" : "Turtle Bay Resort",
+  "number_of_stations" : "6",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.99224422954634",
+    "latitude" : "21.6976574741794",
+    "human_address" : "{\"address\":\"57-091 Kamehameha Hwy\",\"city\":\"Kahuku\",\"state\":\"HI\",\"zip\":\"96731\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "University of Hawaii Faculty Housing",
+  "charging_levels" : "2",
+  "zip_code" : "96822",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Free parking for EV drivers.",
+  "location" : "Charge Spot located approximately 200 yards on the left.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free for EV drivers",
+  "ports" : "1",
+  "parking_lot" : "University of Hawaii Faculty Housing",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8065790315745",
+    "latitude" : "21.308133998360404",
+    "human_address" : "{\"address\":\"3029 Lowrey Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96822\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "University of Hawaii Lower Campus Parking Garage",
+  "charging_levels" : "2",
+  "zip_code" : "96822",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Free parking for EV drivers.",
+  "location" : "On first floor, section F",
+  "hours" : "5:00am-12:00am UH Permit Holders Access: 24/7",
+  "manufacturers" : "Better Place",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free parking for EV Drivers",
+  "ports" : "4",
+  "parking_lot" : "University of Hawaii Lower Campus Parking Garage",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8208116",
+    "latitude" : "21.2978757",
+    "human_address" : "{\"address\":\"2500 Campus Rd &ndash; Arena Parking\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96822\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "USA Hawaii Credit Union",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : "Free charging until 3/31/2013.  4 hour limit. Parking fees may apply.",
+  "location" : "On left after entering parking garage",
+  "hours" : "Mon-Fri 7:00am-7:00pm, Sat 7:00am-2:30pm",
+  "manufacturers" : "Better Place",
+  "island" : "Oahu",
+  "charge_fee" : " Free until 3/31/2013, 4 hours at a time",
+  "park_fee" : "Free",
+  "ports" : "4",
+  "parking_lot" : "USA Hawaii Credit Union",
+  "number_of_stations" : "4",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86148264146328",
+    "latitude" : "21.315085757646898",
+    "human_address" : "{\"address\":\"1226 College Walk\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Waikele Center",
+  "charging_levels" : "2",
+  "zip_code" : "96797",
+  "restrictions" : "Call security to activate charger.  Parking fees may apply.",
+  "location" : "Located by Gap and Brooks Brothers.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Waikele Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.00521770573695",
+    "latitude" : "21.399988788222664",
+    "human_address" : "{\"address\":\"94-849 Lumiaina Street\",\"city\":\"Waipahu\",\"state\":\"HI\",\"zip\":\"96797\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Waikiki Beach Marriott",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "After parking use nearby phone and contact security who will use a motion key to activate the charger. Parking fees may apply. ",
+  "location" : "One Charger is on 3rd floor self parking garage, second Charger is in valet",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$32.00 resort fee includes parking for registered guests. $37.00 valet .services, $4.00/half hour. Validations are offered at the hotel poolside bar & certain restaurants for 2-4 hours",
+  "ports" : "2",
+  "parking_lot" : "Waikiki Beach Marriott",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82323447555714",
+    "latitude" : "21.272511852779814",
+    "human_address" : "{\"address\":\"2552 Kalakaua Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Waikiki Parc Hotel & Halekulani Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "The two hotels share this parking lot.  Green Car rents out electric and hybrid vehicles from the hotel.  Registered Guests with EVs can also charge.  Parking fees may apply.",
+  "location" : "On the 2nd floor.  Drive up the ramp after you pass the parking booth.",
+  "hours" : "24/7",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Day visitors $3/20 minutes.  Overnight guest packages include parking. $20/day without package. $35/day for valet services.",
+  "ports" : "2",
+  "parking_lot" : "Waikiki Parc Hotel & Halekulani Hotel",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83050099755388",
+    "latitude" : "21.278276506987652",
+    "human_address" : "{\"address\":\"2233 Helumoa Rd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Waikiki Sand Villa",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Free charging for hotel guests - Non-guests/bar patrons charge fee is a flat $10/session.  Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "Schneider Electric",
+  "island" : "Oahu",
+  "charge_fee" : "Free to Hotel Guests - Non Guests/Bar Patrons $10.00 per session",
+  "park_fee" : "$20.94 Overnight. $10.00/half hour. Validations offered from facilities within hotel",
+  "ports" : "1",
+  "parking_lot" : "Waikiki Sand Villa",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82297367216864",
+    "latitude" : "21.279148849356034",
+    "human_address" : "{\"address\":\"2375 Ala Wai Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Waikiki Trade Center",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "See Parking Management Office for FOB key to activate the Charger.  Parking fees may apply.",
+  "location" : "EV Charging Stations are located on the 6th floor",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$4.00/half hour, $6.00 Early-bird special (6am-9am, $11.00 regular flat rate (5pm), Validations offered within the building",
+  "ports" : "4",
+  "parking_lot" : "Waikiki Trade Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82698464841934",
+    "latitude" : "21.280111123927384",
+    "human_address" : "{\"address\":\"2255 Kuhio Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Water Front Plaza",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Charge fee is 2 hours free, $5 every additional hour.  A 2 hour limit may be enforced when demand rises.  Use your smart phone to charge by credit card at the charger, instructions on the screen.  Parking fees may apply.",
+  "location" : "The Charger is located in the basement level of the parking garage just off the Waterfront Plaza aka Restaurant Row Pohukaina Street entrance.  Our signs and parking lot stencils are being fabricated",
+  "hours" : "24/7",
+  "manufacturers" : "SemaConnect",
+  "island" : "Oahu",
+  "charge_fee" : "1st 2 hours free, $5 every additional hour",
+  "park_fee" : "$3 every 30 minutes, 1.5-2.5 hours free with Validation from various Restaurant",
+  "ports" : "1",
+  "parking_lot" : "Water Front Plaza",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8631373939972",
+    "latitude" : "21.30097539500713",
+    "human_address" : "{\"address\":\"500 Ala Moana Blvd.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Whole Foods Kailua",
+  "charging_levels" : "2",
+  "zip_code" : "96734",
+  "restrictions" : "2 hour limit on EV charging.  Parking fees may apply.",
+  "location" : "Parking stall in front of entrance",
+  "hours" : "7:00am-10:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Whole Foods Kailua",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.77992312662604",
+    "latitude" : "21.374324099716887",
+    "human_address" : "{\"address\":\"1199 Auloa Road\",\"city\":\"Kailua\",\"state\":\"HI\",\"zip\":\"96734\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Fasi Civic Center Parking Structure",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Activate Charger with ChargePoint Network card or call the number listed on the front of the C1harger for access. Parking fees may apply.",
+  "location" : "Public parking entrance is on Alapai Street and S. Beretania Street. Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Fasi Civic Center Parking Structure",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8549899425223",
+    "latitude" : "21.30367665666738",
+    "human_address" : "{\"address\":\"650 S. King Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Honolulu Zoo Parking Lot",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Activate Charger with ChargePoint Network card or call the number listed on the front of the Charger for access.  Parking fees may apply.",
+  "location" : "Entrance to parking lot is on Kapahulu.  Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Honolulu Zoo Parking Lot",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82056348913014",
+    "latitude" : "21.27175642227519",
+    "human_address" : "{\"address\":\"151 Kapahulu Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Neal Blaisdell Center Parking Structure",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Free parking for EV drivers.  Activate charger with ChargePoint Network card or call the number listed on the front of the charger for access. ",
+  "location" : "S. King Street/Victoria street.  Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Neal Blaisdell Center Parking Structure",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.85238370719622",
+    "latitude" : "21.299239421463",
+    "human_address" : "{\"address\":\"777 Ward Avenue\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Smith-Beretania Parking Structure",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : " Free parking for EV Drivers.  Activate Charger with ChargePoint Network card or call the number listed on the front of the Charger for access.  Parking fees may apply.",
+  "location" : "Entrance on Beretania Street between Nuuanu Avenue and Smith Street.  Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Smith-Beretania Parking Structure",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8605473465528",
+    "latitude" : "21.31193813054432",
+    "human_address" : "{\"address\":\"1170 Nuuanu\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Chinatown Gateway Plaza Parking Structure",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : "Activate Charger with ChargePoint Network card or call the number listed on the front of the C1harger for access.  Parking fees may apply.",
+  "location" : "Entrance to parking structure is located on Bethel Street.  Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Chinatown Gateway Plaza Parking Structure",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86242692959405",
+    "latitude" : "21.310760018685926",
+    "human_address" : "{\"address\":\"1031 Nuuanu Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hale Pauahi Parking Structure",
+  "charging_levels" : "2",
+  "zip_code" : "96817",
+  "restrictions" : "Activate Charger with ChargePoint Network card or call the number listed on the front of the Charger for access.  Parking fees may apply.",
+  "location" : "Entrance on Beretania Street.  Follow blue signs to Charger.",
+  "hours" : "6:00am-12:00am",
+  "manufacturers" : "ChargePoint",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "1",
+  "parking_lot" : "Hale Pauahi Parking Structure",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8615947118563",
+    "latitude" : "21.313766657035284",
+    "human_address" : "{\"address\":\"155 N Beretania St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96817\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Hilton Waikiki Prince",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$25.00 valet services, $15.00 for functions, $3.00 with validation",
+  "ports" : "2",
+  "parking_lot" : "Hilton Waikiki Prince",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82233515352786",
+    "latitude" : "21.275389683273545",
+    "human_address" : "{\"address\":\"2500 Kuhio Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Marriott Waikiki Beach",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Parking rates may apply ",
+  "location" : "EV Charging Stations are located on the 3rd floor",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$4.00/30 minutes. $32 Overnight",
+  "ports" : "2",
+  "parking_lot" : "Marriott Waikiki Beach",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.82323447555714",
+    "latitude" : "21.272511852779814",
+    "human_address" : "{\"address\":\"2552 Kalakaua Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ala Moana Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96814",
+  "restrictions" : "Parking fees may apply",
+  "location" : "Basement floor by the elevator in the self parking lot.",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "$6 with Restaurant Validation.  $20/day Self Park, $25/day Valet.",
+  "ports" : "1",
+  "parking_lot" : "Ala Moana Hotel",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83876576700317",
+    "latitude" : "21.290039639130896",
+    "human_address" : "{\"address\":\"410 Atkinson\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96814\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Ace Hardware",
+  "charging_levels" : "2",
+  "zip_code" : "96707",
+  "restrictions" : "Parking fees may apply",
+  "location" : "In front of Panda Express",
+  "hours" : "Mon-Sat 7:00am-7:00pm, Sun 8:00am-6:00pm",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Ace Hardware",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.086151270823",
+    "latitude" : "21.329825645707103",
+    "human_address" : "{\"address\":\"480 Kamokila\",\"city\":\"Kapolei\",\"state\":\"HI\",\"zip\":\"96707\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Kaiser Honolulu Clinic",
+  "charging_levels" : "2",
+  "zip_code" : "96797",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "EV Charging Stations are located on the 3rd Floor",
+  "hours" : "24/7",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "First 3 Hours Free.  Next 3 hours/$1.00.  $0.50cents/ 3o minutes thereafter",
+  "ports" : "6",
+  "parking_lot" : "Kaiser Honolulu Clinic",
+  "number_of_stations" : "6",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.010179999807",
+    "latitude" : "21.39602999998465",
+    "human_address" : "{\"address\":\"1010 Pensacola St\",\"city\":\"Waipahu\",\"state\":\"HI\",\"zip\":\"96797\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Wyndham Waikiki Beachwalk Hotel",
+  "charging_levels" : "3",
+  "zip_code" : "96815",
+  "restrictions" : "Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Oahu",
+  "charge_fee" : "Free",
+  "park_fee" : "Overnight packages include parking. $20.00/day without package. $35.00 for valet services. Visitors day $3.00/20mins $20.94 Overnight. $10.00/half hour. Validations offered from facilities within hotel $4.00/half hour, $6.00 Early-bird special (6am-9am, $11.00 regular flat rate (5pm), Validations offered within the building  Free",
+  "ports" : "1",
+  "parking_lot" : "Wyndham Waikiki Beachwalk Hotel",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83102218381737",
+    "latitude" : "21.279037461318318",
+    "human_address" : "{\"address\":\"227 Lewers Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Free"
+}
+, {
+  "station_name" : "Historic County Building",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Charging fee is $2/hour.  4 hour limit.  Parking fees may apply.",
+  "location" : "Ewa side of the parking lot.  Between the County Building and the Museum",
+  "hours" : "Business Hours",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "Paid",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "2",
+  "parking_lot" : "Historic County Building",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.36710913251258",
+    "latitude" : "21.974039820623826",
+    "human_address" : "{\"address\":\"4369 Rice Street\",\"city\":\"Lihue\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Lihue Civic Center-Piikoi Building",
+  "charging_levels" : "2",
+  "zip_code" : "96766",
+  "restrictions" : "Charging fee is $2/hour.  4 hour limit. Free parking for EV drivers.",
+  "location" : "Adjacent to Kauai Museum",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Kauai",
+  "charge_fee" : "$2.00/hour, up to 4 hours",
+  "park_fee" : "Free for EV Drivers",
+  "ports" : "3",
+  "parking_lot" : "Lihue Civic Center-Piikoi Building",
+  "number_of_stations" : "3",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-159.3690108257757",
+    "latitude" : "21.975084024169593",
+    "human_address" : "{\"address\":\"4444 Rice Street\",\"city\":\"Lihue\",\"state\":\"HI\",\"zip\":\"96766\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "5A Rent A Space Business Services Center",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "Charging fee is $2/hour.  Credit Card required to use this charge spot.  Parking fees may apply.",
+  "location" : "Charging station located next to the sidewalk across the parking lot from Ohana Taco.",
+  "hours" : "24/7",
+  "manufacturers" : "Schneider Electric",
+  "island" : "Maui",
+  "charge_fee" : "$2/hour.  Credit Card required.",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "5A Rent A Space Business Services Center",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.68663532204664",
+    "latitude" : "20.952712939160733",
+    "human_address" : "{\"address\":\"3600 Lower Honoapiilani Road\",\"city\":\"Lahaina\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Elleair Golf Club",
+  "charging_levels" : "2",
+  "zip_code" : "96753",
+  "restrictions" : "Charging fee is a flat $12/Session.  Parking fees may apply.",
+  "location" : "Visit the Pro Shop or restaurant & attendant will give you access.",
+  "hours" : "During Golfing hours: 6:30 am to 6:00 pm Mon-Sun and Restaurant hours:  8:00am to 10:00 pm. Closed after 10:00 pm.",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "$12 flat fee per session",
+  "park_fee" : "Free",
+  "ports" : "1",
+  "parking_lot" : "Elleair Golf Club",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.44730352109272",
+    "latitude" : "20.754255865531718",
+    "human_address" : "{\"address\":\"1345 Piilani Highway\",\"city\":\"Kihei\",\"state\":\"HI\",\"zip\":\"96753\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Hyatt Regency Maui",
+  "charging_levels" : "2",
+  "zip_code" : "96761",
+  "restrictions" : "$3.50/hour. 4 hour limit.  Pay with Credit Card at charging station.  Parking fees may apply.",
+  "location" : "In Lahaina parking area, take a left turn towards back area, EV station will be directly on your right",
+  "hours" : "24/7",
+  "manufacturers" : "Pep Stations",
+  "island" : "Maui",
+  "charge_fee" : "Paid",
+  "park_fee" : "Free for Restaurant Guests with validation.  $14/Day for Self-Parking, $5/Valet",
+  "ports" : "2",
+  "parking_lot" : "Hyatt Regency Maui",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.6945616692168",
+    "latitude" : "20.916152072725744",
+    "human_address" : "{\"address\":\"200 Nohea Kai Drive\",\"city\":\"Lahaina\",\"state\":\"HI\",\"zip\":\"96761\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Maui Memorial Medical Center",
+  "charging_levels" : "2",
+  "zip_code" : "96793",
+  "restrictions" : "Charging fee is a flat $15/session.  4 hour limit.  Parking fees may apply.",
+  "location" : "Two designated EV parking spaces in the far left of the handicapped parking in the row in front of the ER entrance (facing west Maui mountains).",
+  "hours" : "24/7",
+  "manufacturers" : "AeroVironment",
+  "island" : "Maui",
+  "charge_fee" : "$15/session",
+  "park_fee" : "Free",
+  "ports" : "2",
+  "parking_lot" : "Maui Memorial Medical Center",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-156.48843029126542",
+    "latitude" : "20.884231686320213",
+    "human_address" : "{\"address\":\"220 Mahalani Street\",\"city\":\"Wailuku\",\"state\":\"HI\",\"zip\":\"96793\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Double Tree by Hilton Alana Waikiki Hotel",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Charge fee is a flat $5/session.  Green Car rents out electric and hybrid vehicles from the hotel.  Registered Guests with EVs can also charge.  Must Valet to charge EV.  Parking fees may apply.",
+  "location" : "Valet",
+  "hours" : "24/7",
+  "manufacturers" : "Blink",
+  "island" : "Oahu",
+  "charge_fee" : "Flat $5/Session",
+  "park_fee" : "Subject to Valet Rates",
+  "ports" : "2",
+  "parking_lot" : "Double Tree by Hilton Alana Waikiki Hotel",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83420892244482",
+    "latitude" : "21.285526846034113",
+    "human_address" : "{\"address\":\"1956 Ala Moana Blvd\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Green Energy Outlet",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Charging fee is $4.00 per session plus $2.00/30 minutes.  The ChargePoint Charger has 2 ports, one is outside and available 24/7.  You can pay inside during operating hours, or you can use a Charge Card.  The Tesla Charger is available in the garage only during business hours.  Parking fees may apply.",
+  "location" : "Green spot for EV Charging in front of lot.  Other Chargers available in garage",
+  "hours" : "8:00am-5:00pm Mon-Fri, 8:00am-1:00pm Sat, or available 24/7 with a Charge Card",
+  "manufacturers" : "ChargePoint, Tesla",
+  "island" : "Oahu",
+  "park_fee" : "Free",
+  "ports" : "3",
+  "parking_lot" : "Green Energy Outlet",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.8573277736879",
+    "latitude" : "21.299662384844396",
+    "human_address" : "{\"address\":\"575 Cooke Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Hawaii Convention Center",
+  "charging_levels" : "2",
+  "zip_code" : "96815",
+  "restrictions" : "Charging fee is $2/hour.  Parking fees may apply.",
+  "location" : "In parking structure, Aisle B next to pedestrian walkway",
+  "hours" : "Varies by event.",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "$2.00/hour",
+  "park_fee" : "$10",
+  "ports" : "1",
+  "parking_lot" : "Hawaii Convention Center",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.83557317379913",
+    "latitude" : "21.29030943573963",
+    "human_address" : "{\"address\":\"1801 Kalakaua Ave\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96815\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Hawaii State Capitol",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Charging fee is $2.00/hour.  4 hour limit.  Parking fees may apply.",
+  "location" : "Basement Parking Garage, Entrance off Punchbowl",
+  "hours" : "4:00am. to 6:30pm Mon-Fri, 6:00am to 2:00pm Saturdays",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Paid",
+  "park_fee" : "Public fee $1.00/hour within a 2-hour maximum",
+  "ports" : "1",
+  "parking_lot" : "Hawaii State Capitol",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.85646442453978",
+    "latitude" : "21.307522459380436",
+    "human_address" : "{\"address\":\"415 South Beretania St.\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Honolulu International Airport",
+  "charging_levels" : "2",
+  "zip_code" : "96819",
+  "restrictions" : "Charging fee is a flat $7/session.  Parking fees may apply",
+  "location" : "In regular public parking lot in between interisland and main parking structures, 1st floor",
+  "hours" : "24/7",
+  "manufacturers" : "Recharge Power",
+  "island" : "Oahu",
+  "charge_fee" : "Flat $7/session",
+  "park_fee" : "$15.00/day. $3.00/2hours",
+  "ports" : "1",
+  "parking_lot" : "Honolulu International Airport",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.91871398519555",
+    "latitude" : "21.335604930654792",
+    "human_address" : "{\"address\":\"300 Rodgers Boulevard\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96819\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Ka`ahumanu Hale parking Garage  First Circuit Court",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Charging fee is $2/hour.  4 hour limit. Free parking for EV drivers.",
+  "location" : "Basement floor, first stall, clearly marked",
+  "hours" : "7:00am-5:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "Paid",
+  "park_fee" : "Free for EV drivers",
+  "ports" : "1",
+  "parking_lot" : "Ka`ahumanu Hale parking Garage  First Circuit Court",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86136064277085",
+    "latitude" : "21.301576014347276",
+    "human_address" : "{\"address\":\"564 Pohukaina\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Kakaako Piano Lot Parking Facility",
+  "charging_levels" : "2",
+  "zip_code" : "96813",
+  "restrictions" : "Charging fee is $1/session, plus $1/hour. Free parking for EV Drivers while Charging.  DRIVERS MUST MOVE THEIR EV OUT OF CHARGING STATION SPOT WHEN CHARGING IS COMPLETE.",
+  "location" : "Next to Children’s Discovery Center, right off Ahui St. Ewa side of the lot",
+  "hours" : "24/7",
+  "manufacturers" : "Shorepower",
+  "island" : "Oahu",
+  "charge_fee" : "Paid",
+  "park_fee" : "Free for EV Drivers while Charging.  $2/2 hours, 2-10 hours $3, All day is $5",
+  "ports" : "1",
+  "parking_lot" : "Kakaako Piano Lot Parking Facility",
+  "number_of_stations" : "1",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-157.86003755519",
+    "latitude" : "21.293461524831603",
+    "human_address" : "{\"address\":\"160 Ahui Street\",\"city\":\"Honolulu\",\"state\":\"HI\",\"zip\":\"96813\"}"
+  },
+  "facilities" : "Paid"
+}
+, {
+  "station_name" : "Kapolei Judiciary State Ownership",
+  "charging_levels" : "2",
+  "zip_code" : "96707",
+  "restrictions" : "Charging fee is $2/hour.  4 hour limit. Free parking for EV drivers. ",
+  "location" : "Enter the parking lot and continue to the rear entrance of the building. Two charging stations are located next to the loading docks.",
+  "hours" : "7:00am-5:00pm",
+  "manufacturers" : "Volta",
+  "island" : "Oahu",
+  "charge_fee" : "$2.00/hour, up to 4 hours",
+  "park_fee" : "Free for EV drivers",
+  "ports" : "2",
+  "parking_lot" : "Kapolei Judiciary State Ownership",
+  "number_of_stations" : "2",
+  "location_1" : {
+    "needs_recoding" : false,
+    "longitude" : "-158.08683820776824",
+    "latitude" : "21.327829461113208",
+    "human_address" : "{\"address\":\"4675 Kapolei Pkwy\",\"city\":\"Kapolei\",\"state\":\"HI\",\"zip\":\"96707\"}"
+  },
+  "facilities" : "Paid"
+}
+ ]

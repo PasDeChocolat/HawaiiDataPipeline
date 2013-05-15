@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/underscore-min.js"></script>
+<script src="js/d3.v3.0.8.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/topojson.v0.min.js"></script>
+<style>
+
+.charging {
+  fill: red;
+}
+
+.state {
+  fill: steelblue;
+}
+
+.place,
+.place-label {
+  fill: #444;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+var width = 960,
+    height = 1160;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+queue()
+    .defer(d3.json, "data/hawaii_topojson.json")
+    .defer(d3.json, "data/charging.json")
+    .await(ready);
+
+function ready( error, hawaii, charging ) {
+  drawMap( hawaii, charging );
+}
+
+
+// d3.json("data/hawaii_topojson.json", function(error, hawaii) {
+function drawMap( hawaii, charging ) {
+
+  // Convert back to GeoJSON:
+  var subunits = topojson.object(hawaii, hawaii.objects.subunits);
+
+  // Define the projection:
+  // Hawaii: 19.5667° N, 155.5000° W
+  // All of Hawaii's Islands:
+  // var projection = d3.geo.albers()
+  //   .center([0, 18.5])
+  //   .rotate([157.50, 0])
+  //   .parallels([15, 25])
+  //   .scale(8000)
+  //   .translate([width / 2, height / 2]);
+
+  // Oahu-Only:
+  var projection = d3.geo.albers()
+    .center([0, 21.1])
+    .rotate([157.9, 0])
+    .parallels([15, 25])
+    .scale(50000)
+    .translate([width / 2, height / 2]);
+
+  // Define path generator:
+  var path = d3.geo.path()
+    .projection(projection)
+    .pointRadius(2);
+
+  // Add state path:
+  svg.append("path")
+    .datum(subunits)
+    .attr("class", "state")
+    .attr("d", path);
+
+  // Add charging stations:
+  svg.selectAll("circle.charging")
+    .data(charging, function(d) {
+      return [d.location_1.longitude, d.location_1.latitude];
+    })
+    .enter()
+    .append("circle")
+      .attr("class", "charging")
+      .attr("cx", function(d) {
+        return projection([d.location_1.longitude, d.location_1.latitude])[0];
+      })
+      .attr("cy", function(d) {
+        return projection([d.location_1.longitude, d.location_1.latitude])[1];
+      })
+      .attr("r", 3)
+      .attr("opacity", 0.5);
+
+  // Add places
+  svg.append("path")
+    .datum(topojson.object(hawaii, hawaii.objects.places))
+    .attr("d", path)
+    .attr("class", "place");
+
+  // Add place labels:
+  svg.selectAll(".place-label")
+      .data(topojson.object(hawaii, hawaii.objects.places).geometries)
+    .enter().append("text")
+      .attr("class", "place-label")
+      .attr("transform", function(d) {
+        return "translate(" + projection(d.coordinates) + ")"; })
+      .attr("dy", ".35em")
+      .text(function(d) { return d.properties.name; });
+
+  // Align labels depending on what side of map they're on:
+  var leftPointingCityLabels = ['Wahiawa', 'Kailua-Kona'];
+  svg.selectAll(".place-label")
+    .attr("x", function(d) {
+      var offset = 6;
+      return _.contains(leftPointingCityLabels, d.properties.name) ? -offset : offset;
+    })
+    .style("text-anchor", function(d) {
+      return _.contains(leftPointingCityLabels, d.properties.name) ? "end" : "start";
+    });
+
+};
+
+</script>
+</body>
+</html>

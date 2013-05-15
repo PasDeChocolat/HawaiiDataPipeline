@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script src="js/underscore-min.js"></script>
+<script src="js/d3.v3.0.8.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar.birth {
+  fill: #98abc5;
+}
+
+.bar.death {
+  fill: #ff8c00;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+// Create bar chart:
+function visualizeData( data ) {
+
+  // Create x-axis (year) scale:
+  var x_extent = d3.extent(data, function(d){ return d.year; });
+  var x = d3.scale.linear()
+    .domain(x_extent)
+    .range([0, width]);
+
+  // Create y-axis (death/birth rate) scale:
+  var yMax = d3.max(data, function(d) { return _.max([d.births, d.deaths])});
+  var y = d3.scale.linear()
+    .domain([0, yMax])
+    .range([height, 0]);
+
+  // Add bars for each year:
+  var barWidth = width / (2.0 * data.length) - 1;
+  var bars = svg.selectAll(".bar")
+      .data(data);
+  bars.enter().append("rect")
+      .attr("class", "bar birth")
+      .attr("x", function(d) { return x(d.year); })
+      .attr("width", barWidth)
+      .attr("y", function(d) { return y(d.births); })
+      .attr("height", function(d) { return height - y(d.births); });
+  bars.enter().append("rect")
+      .attr("class", "bar death")
+      .attr("x", function(d) { return x(d.year) + barWidth; })
+      .attr("width", barWidth)
+      .attr("y", function(d) { return y(d.deaths); })
+      .attr("height", function(d) { return height - y(d.deaths); });
+
+  // Create legend:
+  var color = d3.scale.ordinal()
+    .range(["#98abc5", "#ff8c00"]);
+
+  var legend = svg.selectAll(".legend")
+      .data(['Births', 'Deaths'])
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+  // Draw X and Y axes:
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      .tickFormat( d3.format("d") );
+
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left");
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Birth/Death Rate per 1000 Residents");
+
+}
+
+// Combine both death and birth datasets into a single dataset.
+function ready( error, deathData, birthData ) {
+      var mergedData = [];
+    _.each(deathData, function(deathRec){
+      var year = deathRec.year;
+      var births = 0;
+      var birthMatch = _.find(birthData, function(birthRec){
+        return birthRec.year === year;
+      });
+      if (!_.isNull(birthMatch) && !_.isUndefined(birthMatch)) {
+        births = birthMatch.rate_per_1000_resident_population;
+      }
+      mergedData.push({
+        'year': parseInt(year),
+        'births': parseFloat(births),
+        'deaths': parseFloat(deathRec.rate_per_1000_resident_population)
+      });
+    });
+
+    // Feed unified dataset into visualization:
+    visualizeData(mergedData);
+}
+
+queue()
+  .defer(d3.json, "data/death_xa5e-sayp.json")
+  .defer(d3.json, "data/birth_padw-q7ep.json")
+  .await(ready);
+
+
+</script>
+</body>
+</html>

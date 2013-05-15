@@ -1,0 +1,449 @@
+[ {
+  "year" : "1900",
+  "rate_per_1000_resident_population" : "15.4"
+}
+, {
+  "year" : "1901",
+  "rate_per_1000_resident_population" : "19.5"
+}
+, {
+  "year" : "1902",
+  "rate_per_1000_resident_population" : "16.4"
+}
+, {
+  "year" : "1903",
+  "rate_per_1000_resident_population" : "16.3"
+}
+, {
+  "year" : "1904",
+  "rate_per_1000_resident_population" : "16.6"
+}
+, {
+  "year" : "1905",
+  "rate_per_1000_resident_population" : "16.1"
+}
+, {
+  "year" : "1906",
+  "rate_per_1000_resident_population" : "17.1"
+}
+, {
+  "year" : "1907",
+  "rate_per_1000_resident_population" : "17.5"
+}
+, {
+  "year" : "1908",
+  "rate_per_1000_resident_population" : "15.4"
+}
+, {
+  "year" : "1909",
+  "rate_per_1000_resident_population" : "14.9"
+}
+, {
+  "year" : "1910",
+  "rate_per_1000_resident_population" : "16.5"
+}
+, {
+  "year" : "1911",
+  "rate_per_1000_resident_population" : "15.8"
+}
+, {
+  "year" : "1912",
+  "rate_per_1000_resident_population" : "15.1"
+}
+, {
+  "year" : "1913",
+  "rate_per_1000_resident_population" : "16.2"
+}
+, {
+  "year" : "1914",
+  "rate_per_1000_resident_population" : "16.2"
+}
+, {
+  "year" : "1915",
+  "rate_per_1000_resident_population" : "14.9"
+}
+, {
+  "year" : "1916",
+  "rate_per_1000_resident_population" : "16.3"
+}
+, {
+  "year" : "1917",
+  "rate_per_1000_resident_population" : "15.1"
+}
+, {
+  "year" : "1918",
+  "rate_per_1000_resident_population" : "15.6"
+}
+, {
+  "year" : "1919",
+  "rate_per_1000_resident_population" : "14.9"
+}
+, {
+  "year" : "1920",
+  "rate_per_1000_resident_population" : "17.6"
+}
+, {
+  "year" : "1921",
+  "rate_per_1000_resident_population" : "14.4"
+}
+, {
+  "year" : "1922",
+  "rate_per_1000_resident_population" : "15.3"
+}
+, {
+  "year" : "1923",
+  "rate_per_1000_resident_population" : "15.5"
+}
+, {
+  "year" : "1924",
+  "rate_per_1000_resident_population" : "13.0"
+}
+, {
+  "year" : "1925",
+  "rate_per_1000_resident_population" : "12.6"
+}
+, {
+  "year" : "1926",
+  "rate_per_1000_resident_population" : "11.7"
+}
+, {
+  "year" : "1927",
+  "rate_per_1000_resident_population" : "12.0"
+}
+, {
+  "year" : "1928",
+  "rate_per_1000_resident_population" : "11.7"
+}
+, {
+  "year" : "1929",
+  "rate_per_1000_resident_population" : "12.2"
+}
+, {
+  "year" : "1930",
+  "rate_per_1000_resident_population" : "10.5"
+}
+, {
+  "year" : "1931",
+  "rate_per_1000_resident_population" : "9.9"
+}
+, {
+  "year" : "1932",
+  "rate_per_1000_resident_population" : "9.5"
+}
+, {
+  "year" : "1933",
+  "rate_per_1000_resident_population" : "9.5"
+}
+, {
+  "year" : "1934",
+  "rate_per_1000_resident_population" : "9.0"
+}
+, {
+  "year" : "1935",
+  "rate_per_1000_resident_population" : "8.5"
+}
+, {
+  "year" : "1936",
+  "rate_per_1000_resident_population" : "8.7"
+}
+, {
+  "year" : "1937",
+  "rate_per_1000_resident_population" : "8.8"
+}
+, {
+  "year" : "1938",
+  "rate_per_1000_resident_population" : "7.9"
+}
+, {
+  "year" : "1939",
+  "rate_per_1000_resident_population" : "7.5"
+}
+, {
+  "year" : "1940",
+  "rate_per_1000_resident_population" : "7.2"
+}
+, {
+  "year" : "1941",
+  "rate_per_1000_resident_population" : "11.6"
+}
+, {
+  "year" : "1942",
+  "rate_per_1000_resident_population" : "5.8"
+}
+, {
+  "year" : "1943",
+  "rate_per_1000_resident_population" : "5.1"
+}
+, {
+  "year" : "1944",
+  "rate_per_1000_resident_population" : "4.3"
+}
+, {
+  "year" : "1945",
+  "rate_per_1000_resident_population" : "4.2"
+}
+, {
+  "year" : "1946",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1947",
+  "rate_per_1000_resident_population" : "6.1"
+}
+, {
+  "year" : "1948",
+  "rate_per_1000_resident_population" : "6.0"
+}
+, {
+  "year" : "1949",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1950",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1951",
+  "rate_per_1000_resident_population" : "5.6"
+}
+, {
+  "year" : "1952",
+  "rate_per_1000_resident_population" : "5.6"
+}
+, {
+  "year" : "1953",
+  "rate_per_1000_resident_population" : "5.7"
+}
+, {
+  "year" : "1954",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1955",
+  "rate_per_1000_resident_population" : "6.0"
+}
+, {
+  "year" : "1956",
+  "rate_per_1000_resident_population" : "5.6"
+}
+, {
+  "year" : "1957",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1958",
+  "rate_per_1000_resident_population" : "5.3"
+}
+, {
+  "year" : "1959",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1960",
+  "rate_per_1000_resident_population" : "5.6"
+}
+, {
+  "year" : "1961",
+  "rate_per_1000_resident_population" : "5.2"
+}
+, {
+  "year" : "1962",
+  "rate_per_1000_resident_population" : "5.2"
+}
+, {
+  "year" : "1963",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1964",
+  "rate_per_1000_resident_population" : "5.3"
+}
+, {
+  "year" : "1965",
+  "rate_per_1000_resident_population" : "5.3"
+}
+, {
+  "year" : "1966",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1967",
+  "rate_per_1000_resident_population" : "5.5"
+}
+, {
+  "year" : "1968",
+  "rate_per_1000_resident_population" : "5.8"
+}
+, {
+  "year" : "1969",
+  "rate_per_1000_resident_population" : "5.6"
+}
+, {
+  "year" : "1970",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1971",
+  "rate_per_1000_resident_population" : "5.5"
+}
+, {
+  "year" : "1972",
+  "rate_per_1000_resident_population" : "5.5"
+}
+, {
+  "year" : "1973",
+  "rate_per_1000_resident_population" : "5.5"
+}
+, {
+  "year" : "1974",
+  "rate_per_1000_resident_population" : "5.1"
+}
+, {
+  "year" : "1975",
+  "rate_per_1000_resident_population" : "4.9"
+}
+, {
+  "year" : "1976",
+  "rate_per_1000_resident_population" : "5.3"
+}
+, {
+  "year" : "1977",
+  "rate_per_1000_resident_population" : "4.9"
+}
+, {
+  "year" : "1978",
+  "rate_per_1000_resident_population" : "5.0"
+}
+, {
+  "year" : "1979",
+  "rate_per_1000_resident_population" : "5.2"
+}
+, {
+  "year" : "1980",
+  "rate_per_1000_resident_population" : "5.0"
+}
+, {
+  "year" : "1981",
+  "rate_per_1000_resident_population" : "5.0"
+}
+, {
+  "year" : "1982",
+  "rate_per_1000_resident_population" : "5.2"
+}
+, {
+  "year" : "1983",
+  "rate_per_1000_resident_population" : "5.3"
+}
+, {
+  "year" : "1984",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1985",
+  "rate_per_1000_resident_population" : "5.5"
+}
+, {
+  "year" : "1986",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1987",
+  "rate_per_1000_resident_population" : "5.7"
+}
+, {
+  "year" : "1988",
+  "rate_per_1000_resident_population" : "5.4"
+}
+, {
+  "year" : "1989",
+  "rate_per_1000_resident_population" : "5.7"
+}
+, {
+  "year" : "1990",
+  "rate_per_1000_resident_population" : "6.0"
+}
+, {
+  "year" : "1991",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1992",
+  "rate_per_1000_resident_population" : "5.9"
+}
+, {
+  "year" : "1993",
+  "rate_per_1000_resident_population" : "6.2"
+}
+, {
+  "year" : "1994",
+  "rate_per_1000_resident_population" : "6.1"
+}
+, {
+  "year" : "1995",
+  "rate_per_1000_resident_population" : "6.3"
+}
+, {
+  "year" : "1996",
+  "rate_per_1000_resident_population" : "6.6"
+}
+, {
+  "year" : "1997",
+  "rate_per_1000_resident_population" : "6.5"
+}
+, {
+  "year" : "1998",
+  "rate_per_1000_resident_population" : "6.7"
+}
+, {
+  "year" : "1999",
+  "rate_per_1000_resident_population" : "6.9"
+}
+, {
+  "year" : "2000",
+  "rate_per_1000_resident_population" : "6.7"
+}
+, {
+  "year" : "2001",
+  "rate_per_1000_resident_population" : "6.7"
+}
+, {
+  "year" : "2002",
+  "rate_per_1000_resident_population" : "6.9"
+}
+, {
+  "year" : "2003",
+  "rate_per_1000_resident_population" : "7.0"
+}
+, {
+  "year" : "2004",
+  "rate_per_1000_resident_population" : "7.0"
+}
+, {
+  "year" : "2005",
+  "rate_per_1000_resident_population" : "7.0"
+}
+, {
+  "year" : "2006",
+  "rate_per_1000_resident_population" : "7.2"
+}
+, {
+  "year" : "2007",
+  "rate_per_1000_resident_population" : "7.3"
+}
+, {
+  "year" : "2008",
+  "rate_per_1000_resident_population" : "7.2"
+}
+, {
+  "year" : "2009",
+  "rate_per_1000_resident_population" : "7.5"
+}
+, {
+  "year" : "2010",
+  "rate_per_1000_resident_population" : "7.1"
+}
+, {
+  "year" : "2011",
+  "rate_per_1000_resident_population" : "7.2"
+}
+ ]

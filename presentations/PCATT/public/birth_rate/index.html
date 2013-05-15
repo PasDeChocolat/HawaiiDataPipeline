@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script src="js/d3.v3.0.8.min.js"></script>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+  opacity: 0.8;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+// Declare chart size and margins:
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// Create formatting functions for axis labels:
+var formatYear = d3.format("d");
+var formatPercent = d3.format(".0%");
+
+// Create main SVG object, which contains chart.
+// Append SVG "g" (group) element to it, which will contain
+// all chart elements.
+// Inset the group by margins.
+var svg = d3.select("body").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// Trigger function to create the chart after data has been loaded:
+d3.json("data/birth_padw-q7ep.json", function(error, data) {
+
+  // Create X-axis scale.
+  // Domain is the min/max values of the data.
+  // Range is what you want to map those values to (chart width).
+  var x_extent = d3.extent(data, function(d){ return parseInt(d.year); });
+  var x = d3.scale.linear()
+    .domain(x_extent)
+    .range([0, width]);
+
+  // Create Y-axis scale:
+  var y = d3.scale.linear()
+      .domain([0, d3.max(data, function(d) { return parseFloat(d.rate_per_1000_resident_population); })])
+      .range([height, 0]);
+
+  // Specify labels for the X/Y-axes.
+  // The will be added to the chart later.
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      .tickFormat(formatYear);
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left");
+
+  // Set bar width:
+  var barWidth = width / data.length;
+
+  // Create all the bars!
+  // "enter()" is used to specify how to create bars for new
+  // data added to the chart.
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.year); })
+      .attr("width", barWidth - 1)
+      .attr("y", function(d) { return y(d.rate_per_1000_resident_population); })
+      .attr("height", function(d) { return height - y(d.rate_per_1000_resident_population); });
+
+  // Add labels to X/Y-axes:
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Birth Rate per 1000 Residents");
+});
+
+</script>
+</body>
+</html>
