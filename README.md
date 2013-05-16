@@ -66,8 +66,6 @@ The State of Hawaii provides a lot of datasets.  You may wish to find a dataset 
  => [:name, :id, :metadata, :index]
 
 # Note, I've stuffed all the data from the API into the ":metadata" hash.
-# All features of this class are basically convenience methods for 
-# parsing this metadata hash.
 
 # But, it also has method access to top-level keys:
 > i[:name]
@@ -125,8 +123,10 @@ This only works for the State of Hawaii datasets.  This is not implemented for t
 The State of Hawaii provides a lot of metadata for each catalog item. You can use the tool to explore this metadata.
 
 ````ruby
-# You can call normal Ruby Hash methods on the catalog item,
-# including methods that take blocks.
+# Catalog items are just nomal Ruby Hash objects.
+# All features of the CatalogItem (CI) module are static convenience methods for 
+# parsing this metadata hash.
+
 # The trailing "nil" just suppresses echoing of output.
 > i.each {|key, value| puts "#{key} is #{value}" };nil
 name is 1. USA.gov Short Links
@@ -166,7 +166,7 @@ index is 0
 # Search for column by part of the column name:
 > cols = CI.column_like i, "url"
  => [{"id"=>2802619, "name"=>"Short URL"...
- 
+
 > cols.size
  => 4
 ````
