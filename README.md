@@ -171,7 +171,25 @@ index is 0
  => 4
 ````
 
+You can begin to see the power of searching through the metadata for each catalog item, when you consider that we might match datasets together based on similar column types (such as latitude and longitude).
+
+
+## What could this possibly be good for?
+
+It's difficult to explain this, as there are folks who will see immediate value here and those who do not. If you do not, it's probably because you aren't sure how exactly to work with all this data. Rest assured, if you find yourself working with **more than one** dataset at a time, you'll want something more than a mouse to help you.
+
+You'll probably want something that looks like this tool right here. This isn't the only way to solve this problem. How about writing something with Clojure? Haskell?
+
+In the future I'd like to (possibly):
+
+- [ ] Add **charts** and **maps** to the dataset catalog.
+- [ ] Allow searching for datasets with matching column types.
+- [ ] Allow composition of multiple datasets, based on shared column types.
+- [ ] Generate simple D3 charts for basic datasets.
+- [ ] Generate simple D3 maps for basic datasets (which include lat/long info).
+
 Enjoy!
+
 
 # CITY OF HONOLULU DATASETS
 
