@@ -23,8 +23,11 @@ $ irb -r './client.rb'
 > client = HDP::Client.new 
  => #<HDPipeline::Client:0x007f8c82198b90 @user_config={:socrata=>{:app_token=>"xxxxx"}}, @config={:gov=>:state, :app_token=>"xxxxx"}>
 
-> client.list_datasets
+> client.list
  ... (bit huge list: see below for example) ...
+
+ > client.list "income"
+ ... (smaller, more manageable list of datasets filtered by "income" in name, description) ...
 
 > data = client.data_for "padw-q7ep"
  => ... (big dataset as array of hashes) ...
@@ -195,7 +198,7 @@ Enjoy!
 
 <pre>
 client.set_dataset_type :city
-client.list_datasets
+client.list
  => ...
 0) Name: /Finance/City-FY14-Proposed  ID: rh9s-z3mn
 1) Name: /Transportation/Bike-Rack-Locations-By-Area  ID: ab7c-s2jr
@@ -220,7 +223,7 @@ client.list_datasets
 
 <pre>
 client.set_dataset_type :state
-client.list_datasets
+client.list
  => ...
 Search complete, found 381 datasets.
 0) Name: 1. USA.gov Short Links  ID: wzeq-n5pg

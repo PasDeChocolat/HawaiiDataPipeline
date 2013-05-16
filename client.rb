@@ -188,6 +188,7 @@ module HDPipeline
     def catalog_search search_str
       PipelineDataset.select_catalog datasets, :any, search_str
     end
+    alias_method :search_catalog, :catalog_search
 
     def catalog_with_name search_str
       PipelineDataset.select_catalog datasets, :name, search_str
@@ -240,12 +241,14 @@ module HDPipeline
       PipelineDataset.sort_catalog( links )
     end
 
-    def list_datasets
-      datasets.each do |d|
+    def list_datasets search_str=nil
+      list = search_str.nil? ? datasets : catalog_search(search_str)
+      list.each do |d|
         PipelineDataset.print_catalog_item d
       end
       nil
     end
+    alias_method :list, :list_datasets
 
   end
 end
