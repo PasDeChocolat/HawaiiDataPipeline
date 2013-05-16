@@ -175,7 +175,7 @@ Enjoy!
 
 # CITY OF HONOLULU DATASETS
 
-````ruby
+<pre>
 client.set_dataset_type :city
 client.list_datasets
  => ...
@@ -196,11 +196,11 @@ client.list_datasets
 14) Name: /dataset/Traffic-Camera-Locations  ID: dcdf-43kn
 15) Name: /dataset/Traffic-Incidents  ID: ix32-iw26
  => nil
-````
+</pre>
 
 # STATE OF HAWAII DATASETS
 
-````ruby
+<pre>
 client.set_dataset_type :state
 client.list_datasets
  => ...
@@ -587,7 +587,7 @@ Search complete, found 381 datasets.
 379) Name: WTI Barrel of Oil Future Prices  ID: jzyk-q3tp
 380) Name: White House Visitor Records Requests  ID: white-house-visitor-records
  => nil
-````
+</pre>
 
 
 # LICENSE
