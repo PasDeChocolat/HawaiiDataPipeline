@@ -48,9 +48,11 @@ There's also an alternate way to grab datasets by their index (in the list):
  => [{"year"=>"1900", "rate_per_1000_resident_population"=>"6.7"},...
 ````
 
-## Catalog Exploration
+## Catalog Search
 
-The State of Hawaii provides a lot of metadata for each catalog item. You can use the tool to explore this metadata.
+This only works for the State of Hawaii datasets.  This is not implemented for the City of Honolulu.  We require a "catalog of datasets" for this to work.
+
+The State of Hawaii provides a lot of datasets.  You may wish to find a dataset via index or ID lookup. Or, you may with to search on name, description, or some other part of the catalog metadata.
 
 ````ruby
 # Get a catalog item by index:
@@ -68,12 +70,61 @@ The State of Hawaii provides a lot of metadata for each catalog item. You can us
 # parsing this metadata hash.
 
 # But, it also has method access to top-level keys:
-> i.name
+> i[:name]
  => "1. USA.gov Short Links"
 
-> i.id
+> i[:id]
  => "wzeq-n5pg"
 
+> i[:index]
+ => 0
+
+# Search by partial name of the dataset:
+> list = client.catalog_with_name "EV"
+...
+ => [{:name=>"Hawaii EV Charging Stations 02072013"...
+> list.size
+ => 1
+
+# Search by your keywords for you idea, such as a name of thing:
+> list = client.catalog_search "hawaii"
+ => [{:name=>"2011 Visitor Plant Inventory Hawaii"...
+
+> list.size
+ => 70
+
+> list = client.catalog_search "budget"
+ => [{:name=>"FY 12 & FY 13 CIP Budget"...
+
+> list.size
+ => 2
+
+# General search, allows for searching by long-form descriptions:
+> list = client.catalog_search "alpha designations"
+ => [{:name=>"FY 12 & FY 13 CIP Budget"...
+
+# ...searching by index:
+> list = client.catalog_search 0
+ => [{:name=>"1. USA.gov Short Links"...
+
+> list.size
+ => 1
+
+# ...searching by ID:
+> list = c.catalog_search "wzeq-n5pg"
+ => [{:name=>"1. USA.gov Short Links"...
+
+> list.size
+ => 1
+````
+
+## Catalog Exploration
+
+This only works for the State of Hawaii datasets.  This is not implemented for the City of Honolulu.  We require a "catalog of datasets" for this to work.
+
+The State of Hawaii provides a lot of metadata for each catalog item. You can use the tool to explore this metadata.
+
+````ruby
 # You can call normal Ruby Hash methods on the catalog item,
 # including methods that take blocks.
 # The trailing "nil" just suppresses echoing of output.
@@ -85,31 +136,39 @@ index is 0
  => nil
 
 # Get at the metadata:
-> i.metadata
- => {"system_id"=>"wzeq-n5pg"
+> i[:metadata]
+ => {"system_id"=>"wzeq-n5pg"...
 
 # Find all the columns in this dataset:
-> i.columns
+> CI.columns i
  => [{"id"=>2802619,...}]
 
 # List columns by name:
-> i.column_names => ["short_url", "user_agent", "country_code", "known_user", "global_bitly_hash", "user_bitly_hash", "user_login", "short_url_cname", "referring_url", "long_url", "timestamp", "geo_region", "location", "city", "timezone", "hash_timestamp", "language"]
+> CI.column_names i
+ => ["short_url", "user_agent", "country_code", "known_user", "global_bitly_hash", "user_bitly_hash", "user_login", "short_url_cname", "referring_url", "long_url", "timestamp", "geo_region", "location", "city", "timezone", "hash_timestamp", "language"]
 
-# List columns by field (display) names:
-> i.column_field_names
+# List columns by display names:
+> CI.column_display_names i
  => ["Short URL", "User Agent", "Country Code", "Known User", "Global Bitly Hash", "User Bitly Hash", "User Login", "Short URL CNAME", "Referring URL", "Long URL", "Timestamp", "Geo Region", "Location", "City", "Timezone", "Hash Timestamp", "Language"]
 
 # Look up metadata on column by name:
-> i.column "short_url"
+> CI.column i, "short_url"
  => [{"id"=>2802619, "name"=>"Short URL", "dataTypeName"=>"url", "fieldName"=>"short_url", "position"=>2, "renderTypeName"=>"url", "tableColumnId"=>1502687, "width"=>208, "format"=>{}, "subColumnTypes"=>["url", "description"]}]
 
 # Look up metadata on column by field (display) name:
-> i.column "Short URL"
+> CI.column i, "Short URL"
  => [{"id"=>2802619, "name"=>"Short URL"...}]
 
 # Look up metadata on column by ID:
-> i.column 2802619
+> CI.column i, 2802619
  => [{"id"=>2802619, "name"=>"Short URL"...}]
+
+# Search for column by part of the column name:
+> cols = CI.column_like i, "url"
+ => [{"id"=>2802619, "name"=>"Short URL"...
+ 
+> cols.size
+ => 4
 ````
 
 Enjoy!
