@@ -241,6 +241,8 @@ However, there's a short-cut to generating this data. Look in the **tmp/cache** 
 # Get a dataset (this is the birthrate dataset):
 > d = client.data_at 48
 
+# Do crazy things with the data here.
+
 # Generate a JSON file from the birthrate data:
 > client.export_json d, "temp.json"
  => 6608
