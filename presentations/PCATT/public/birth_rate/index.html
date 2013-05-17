@@ -64,16 +64,6 @@ d3.json("data/birth_padw-q7ep.json", function(error, data) {
       .domain([0, d3.max(data, function(d) { return parseFloat(d.rate_per_1000_resident_population); })])
       .range([height, 0]);
 
-  // Specify labels for the X/Y-axes.
-  // The will be added to the chart later.
-  var xAxis = d3.svg.axis()
-      .scale(x)
-      .orient("bottom")
-      .tickFormat(formatYear);
-  var yAxis = d3.svg.axis()
-      .scale(y)
-      .orient("left");
-
   // Set bar width:
   var barWidth = width / data.length;
 
@@ -89,21 +79,31 @@ d3.json("data/birth_padw-q7ep.json", function(error, data) {
       .attr("y", function(d) { return y(d.rate_per_1000_resident_population); })
       .attr("height", function(d) { return height - y(d.rate_per_1000_resident_population); });
 
-  // Add labels to X/Y-axes:
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+  // // Specify labels for the X/Y-axes.
+  // // The will be added to the chart later.
+  // var xAxis = d3.svg.axis()
+  //     .scale(x)
+  //     .orient("bottom")
+  //     .tickFormat(formatYear);
+  // var yAxis = d3.svg.axis()
+  //     .scale(y)
+  //     .orient("left");
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Birth Rate per 1000 Residents");
+  // // Add labels to X/Y-axes:
+  // svg.append("g")
+  //     .attr("class", "x axis")
+  //     .attr("transform", "translate(0," + height + ")")
+  //     .call(xAxis);
+
+  // svg.append("g")
+  //     .attr("class", "y axis")
+  //     .call(yAxis)
+  //   .append("text")
+  //     .attr("transform", "rotate(-90)")
+  //     .attr("y", 6)
+  //     .attr("dy", ".71em")
+  //     .style("text-anchor", "end")
+  //     .text("Birth Rate per 1000 Residents");
 });
 
 </script>
