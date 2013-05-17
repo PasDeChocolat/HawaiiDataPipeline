@@ -239,10 +239,10 @@ However, there's a short-cut to generating this data. Look in the **tmp/cache** 
 
 ````ruby
 # Get a dataset (this is the birthrate dataset):
-> d = c.data_at 48
+> d = client.data_at 48
 
 # Generate a JSON file from the birthrate data:
-> c.export_json d, "temp.json"
+> client.export_json d, "temp.json"
  => 6608
 # Your JSON file is now in "data/birthrate.json"
 
