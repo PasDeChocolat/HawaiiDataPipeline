@@ -291,6 +291,7 @@ module HDPipeline
 
     def list_datasets search_str=nil
       list = search_str.nil? ? datasets : catalog_search(search_str)
+      list ||= []
       list.each do |d|
         PipelineDataset.print_catalog_item d
       end
