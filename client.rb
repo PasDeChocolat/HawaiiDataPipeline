@@ -224,7 +224,21 @@ module HDPipeline
 
     # This section handles outputing data to file.
     # Check the tmp/cache directory for all auto-generated output.
-    
+    def export_csv dataset_or_index_or_id, file_name="export.csv", delimiter=nil
+      csv_opts = {}
+      csv_opts[:col_sep] = delimiter unless delimiter.nil?
+      path = DATA_ROOT + "/" + file_name
+      if dataset_or_index_or_id.is_a? Array
+        DataIO::csv_from_dataset dataset_or_index_or_id, path, csv_opts
+      end
+    end
+
+    def export_json dataset_or_index_or_id, file_name="export.json"
+      path = DATA_ROOT + "/" + file_name
+      if dataset_or_index_or_id.is_a? Array
+        DataIO::json_from_dataset dataset_or_index_or_id, path
+      end
+    end
 
 
     # Getting the dataset catalog:

@@ -231,6 +231,34 @@ Examples of each of these follow.
 The custom query interface is still a bit clunky. But, it's interesting to note that the advantage of using custom queries is that the work is done on the SODA servers. This means that it's usually much faster than pulling all the data and processing it locally.
 
 
+## Exporting Data (JSON or CSV)
+
+When exporting data, it's important to note that all explicitly exported data goes to the **data** directory by default.
+
+However, there's a short-cut to generating this data. Look in the **tmp/cache** directory. That's where *everything* you download goes. EVERYTHING.
+
+````ruby
+# Get a dataset (this is the birthrate dataset):
+> d = c.data_at 48
+
+# Generate a JSON file from the birthrate data:
+> c.export_json d, "temp.json"
+ => 6608
+# Your JSON file is now in "data/birthrate.json"
+
+# Generate a CSV (comma-delimited) for the birthrate data:
+> client.export_csv d, "birthrate.csv"
+ => [{"year"=>"1900"...
+# Your CSV file is now in "data/birthrate.csv"
+
+# Specify a custom delimiter (e.g. the pipe here) for the birthrate data:
+> client.export_csv d, "piped_birthrate.csv", "|"
+ => [{"year"=>"1900"...
+# Your CSV file is now in "data/piped_birthrate.csv"
+
+````
+
+
 ## What could this possibly be good for?
 
 It's difficult to explain this, as there are folks who will see immediate value here and those who do not. If you do not, it's probably because you aren't sure how exactly to work with all this data. Rest assured, if you find yourself working with **more than one** dataset at a time, you'll want something more than a mouse to help you.
