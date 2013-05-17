@@ -20,3 +20,4 @@ doc/
 
 # Project Specific
 config/*.yml
+data/*

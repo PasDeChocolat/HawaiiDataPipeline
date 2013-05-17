@@ -9,6 +9,7 @@ require 'yaml'
 $:.unshift File.dirname(__FILE__)+"/lib"
 require 'pipeline_dataset'
 require 'catalog_item'
+require 'data_io'
 
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
@@ -21,6 +22,7 @@ module HDPipeline
   CACHE_MINUTES = WEEK_IN_MINUTES * 4
   CACHE_ROOT = APP_ROOT + "/tmp/cache"
   CONFIG_ROOT = APP_ROOT + "/config"
+  DATA_ROOT = APP_ROOT + "/data"
 
   PER_FILE_LIMIT = 1000
   
@@ -43,7 +45,10 @@ module HDPipeline
       @config[:app_token] ||= @user_config[:socrata] ? @user_config[:socrata][:app_token] : nil
       @config[:app_token] ||= "K6rLY8NBK0Hgm8QQybFmwIUQw"
       puts "API requests will use app_token: #{@config[:app_token]}"
+
+      # Create required working directories:
       FileUtils.mkdir_p CACHE_ROOT
+      FileUtils.mkdir_p DATA_ROOT
     end
 
     def set_dataset_type city_or_state
@@ -216,7 +221,13 @@ module HDPipeline
     def catalog_with_name search_str
       PipelineDataset.select_catalog datasets, :name, search_str
     end
+
+    # This section handles outputing data to file.
+    # Check the tmp/cache directory for all auto-generated output.
     
+
+
+    # Getting the dataset catalog:
     def datasets
       return @dataset_catalog[dataset_type] unless @dataset_catalog.nil? || @dataset_catalog[dataset_type].nil?
 
