@@ -21,6 +21,8 @@ module HDPipeline
   CACHE_MINUTES = WEEK_IN_MINUTES * 4
   CACHE_ROOT = APP_ROOT + "/tmp/cache"
   CONFIG_ROOT = APP_ROOT + "/config"
+
+  PER_FILE_LIMIT = 1000
   
   class Client
     include PipelineDataset
@@ -133,7 +135,9 @@ module HDPipeline
         offset: 0,
         keep_in_mem: true,
         from_cache: true,
-        soda_query: nil
+        soda_query: nil,
+        order_by: nil,
+        max_recs: nil
       }.merge(opts)
       offset   = opts[:offset]
       all_data = opts[:keep_in_mem] ? [] : nil
@@ -141,14 +145,29 @@ module HDPipeline
       id = index_or_id
       id = PipelineDataset.resource_id_at datasets, index_or_id if index_or_id.is_a? Integer
 
+      limit = PER_FILE_LIMIT
+      limit = opts[:max_recs] if opts[:max_recs] && opts[:max_recs] < limit
       while true do
-        url = "http://#{api_url}/resource/#{id}.json?$limit=1000&$offset=#{offset}"
-        url += opts[:soda_query] if !opts[:soda_query].to_s.empty?
+        # Create URL and params:
+        url = "http://#{api_url}/resource/#{id}.json"
+        params = "?$limit=#{limit}&$offset=#{offset}"
+        params += opts[:soda_query] unless opts[:soda_query].to_s.empty?
+        params += "&$order=#{opts[:order_by]}" unless opts[:order_by].to_s.empty?
+        url += URI.escape(params)
         puts "url is: #{url}"
+
+        # Get response
         r = opts[:from_cache] ? response_for(url) : response_for!(url)
+        return all_data if r.nil?
+
+        # Parse it
         d = JSON.parse(r)
         all_data += d if opts[:keep_in_mem]
-        break if d.size < 1000
+        break if d.size < limit
+        if opts[:max_recs] && offset * limit > opts[:max_recs]
+          all_data = all_data.take opts[:max_recs]
+          break
+        end
         offset += 1
       end
 

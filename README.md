@@ -177,6 +177,50 @@ index is 0
 You can begin to see the power of searching through the metadata for each catalog item, when you consider that we might match datasets together based on similar column types (such as latitude and longitude).
 
 
+## Filtering large datasets
+
+For a more comprehensive look at how to work with datasets, please check out the list of tutorials at the top of this page.
+
+If you're interested in looking at smaller portions of large datasets, it is important to understand how to use [SODA API queries](http://dev.socrata.com/docs/queries). The Pipeline tool allows you to attach arbitrary SODA queries to your request for a dataset via the "client.data_for" method. It also has helpful convenience options for specifying just portions of a query (such as "where", or "max_recs").
+
+Here are some examples.  Please check out the [SODA query documentation](http://dev.socrata.com/docs/queries) for more infomation on how to specify a valid query.
+
+The parameters available on **client.data_for** are:
+* max_recs: N - Specify the max number (N) of records to return.
+* order_by: "column_name" - Specify the column (column_name) to sort by (ascending is the default).
+* order_by: "column_name desc" - Same, but descending.
+* soda_query: "your_query" - Specify your own [SODA query](http://dev.socrata.com/docs/queries).
+
+Examples of each of these follow.
+
+````ruby
+# Specify the maximum number of records to return, and how to sort
+# them.  This is useful when the dataset is large, and you just want
+# a peek at it.
+# This query pulls the oldest records.
+> client.data_for "dqp6-3idi", max_recs: 10, order_by: "month_of_price"
+...
+ => [{"price"=>"2.314", "county"=>"US", "month_of_price"=>"2006-01-01T00:00:00", "fuel"=>"Gasoline - Regular", "physicalunit"=>"Dollars"},...
+
+# Same as the above, but this query pulls the latest records.
+> cient.data_for "dqp6-3idi", max_recs: 10, order_by: "month_of_price desc"
+...
+ => [{"price"=>"3.356", "county"=>"US", "month_of_price"=>"2012-07-01T00:00:00", "fuel"=>"Gasoline - Regular", "physicalunit"=>"Dollars"},...
+
+# This is an example of aggregation, calculating the average fuel price.
+> client.data_for "dqp6-3idi", soda_query: "&$select=fuel,avg(price)&$group=fuel"
+...
+ => [{"fuel"=>"Gasoline - Regular", "avg_price"=>"3.4411924050632911"}, {"fuel"=>"Gasoline - Midgrade", "avg_price"=>"3.6041848101265823"}, {"fuel"=>"Gasoline - Premium", "avg_price"=>"3.6840987341772152"}, {"fuel"=>"Diesel", "avg_price"=>"3.9448050632911392"}]
+
+# Here's anoter aggregation that finds the max price:
+> client.data_for "dqp6-3idi", soda_query: "&$select=fuel,max(price)&$group=fuel"
+...
+ => [{"fuel"=>"Gasoline - Regular", "max_price"=>"4.891"}, {"fuel"=>"Gasoline - Midgrade", "max_price"=>"4.978"}, {"fuel"=>"Gasoline - Premium", "max_price"=>"5.067"}, {"fuel"=>"Diesel", "max_price"=>"5.483"}]
+````
+
+The custom query interface is still a bit clunky. But, it's interesting to note that the advantage of using custom queries is that the work is done on the SODA servers. This means that it's usually much faster than pulling all the data and processing it locally.
+
+
 ## What could this possibly be good for?
 
 It's difficult to explain this, as there are folks who will see immediate value here and those who do not. If you do not, it's probably because you aren't sure how exactly to work with all this data. Rest assured, if you find yourself working with **more than one** dataset at a time, you'll want something more than a mouse to help you.
