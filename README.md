@@ -197,6 +197,16 @@ Examples of each of these follow.
 # Specify the maximum number of records to return, and how to sort
 # them.  This is useful when the dataset is large, and you just want
 # a peek at it.
+
+# Let's look at this dataset, the price of gas:
+> client.list "dqp6-3idi"
+...
+24) Name: AAA Fuel Prices  ID: dqp6-3idi
+
+# This dataset has the following columns:
+> CI.column_names c.catalog_search("dqp6-3idi").first
+ => ["month_of_price", "county", "fuel", "price", "physicalunit"]
+
 # This query pulls the oldest records.
 > client.data_for "dqp6-3idi", max_recs: 10, order_by: "month_of_price"
 ...
