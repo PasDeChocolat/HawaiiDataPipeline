@@ -163,12 +163,16 @@ module HDPipeline
         # Parse it
         d = JSON.parse(r)
         all_data += d if opts[:keep_in_mem]
+        
+        # Stop pulling if no more data left:
         break if d.size < limit
-        if opts[:max_recs] && offset * limit > opts[:max_recs]
+
+        # Stop pulling if enough data pulled:
+        offset += 1
+        if opts[:max_recs] && offset * limit >= opts[:max_recs]
           all_data = all_data.take opts[:max_recs]
           break
         end
-        offset += 1
       end
 
       all_data
