@@ -305,6 +305,9 @@ client.list
 
 # STATE OF HAWAII DATASETS
 
+#### Note: This seems to be broken. The Socrata dataset is no longer available as a "resource".
+Try using the [web interface](https://data.honolulu.gov/dataset/Data-Catalog/a3ah-kpkr) instead.
+
 <pre>
 client.set_dataset_type :state
 client.list

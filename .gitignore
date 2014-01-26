@@ -20,3 +20,6 @@ doc/
 # Project Specific
 config/*.yml
 data/*
+
+# mac
+.DS_Store

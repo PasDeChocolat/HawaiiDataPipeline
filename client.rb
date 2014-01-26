@@ -13,7 +13,8 @@ require 'data_io'
 
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
-  STATE_CATALOG_ID = "8igt-zydr"
+  # STATE_CATALOG_ID = "8igt-zydr"
+  STATE_CATALOG_ID = "a3ah-kpkr"
   CITY_API_URL  = "data.honolulu.gov"
 
   CLIENT_ENV = "development"
@@ -155,7 +156,7 @@ module HDPipeline
       while true do
         # Create URL and params:
         url = "http://#{api_url}/resource/#{id}.json"
-        params = "?$limit=#{limit}&$offset=#{offset}"
+        params = "?$limit=#{limit}&$offset=#{offset*limit}"
         params += opts[:soda_query] unless opts[:soda_query].to_s.empty?
         params += "&$order=#{opts[:order_by]}" unless opts[:order_by].to_s.empty?
         url += URI.escape(params)
