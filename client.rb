@@ -13,8 +13,6 @@ require 'data_io'
 
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
-  # STATE_CATALOG_ID = "8igt-zydr"
-  #STATE_CATALOG_ID = "a3ah-kpkr"
   STATE_CATALOG_ID = "kpyw-kpxf"
   CITY_API_URL  = "data.honolulu.gov"
 
