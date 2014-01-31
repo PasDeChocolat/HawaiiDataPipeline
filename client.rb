@@ -14,7 +14,8 @@ require 'data_io'
 module HDPipeline
   STATE_API_URL = "data.hawaii.gov"
   # STATE_CATALOG_ID = "8igt-zydr"
-  STATE_CATALOG_ID = "a3ah-kpkr"
+  #STATE_CATALOG_ID = "a3ah-kpkr"
+  STATE_CATALOG_ID = "kpyw-kpxf"
   CITY_API_URL  = "data.honolulu.gov"
 
   CLIENT_ENV = "development"
@@ -147,7 +148,7 @@ module HDPipeline
       }.merge(opts)
       offset   = opts[:offset]
       all_data = opts[:keep_in_mem] ? [] : nil
-      
+
       id = index_or_id
       id = PipelineDataset.resource_id_at datasets, index_or_id if index_or_id.is_a? Integer
 
@@ -249,10 +250,11 @@ module HDPipeline
       if is_state_data?
         # If state, use shiney, new catalog of datasets
         d = data_for STATE_CATALOG_ID, soda_query: "&$where=type='datasets'"
+        raise "Unable to retrive any data" if d.nil? or d.empty?
         items = d.map do |item|
-          PipelineDataset.format_catalog_item_hash( 
-            CatalogItem.name(item), 
-            CatalogItem.id(item), 
+          PipelineDataset.format_catalog_item_hash(
+            CatalogItem.name(item),
+            CatalogItem.id(item),
             metadata: item
           )
         end
